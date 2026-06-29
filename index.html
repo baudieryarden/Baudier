@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baudier Yarden: 6123 Dauphine St.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --sage:   #9DBFB4;
+  --linen:  #E8DFC8;
+  --ink:    #1A1918;
+  --purple: #7B5EA7;
+  --orange: #D4501A;
+  --green:  #2D7A4A;
+  --cream:  #F5F0E4;
+  --white:  #FDFCF8;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--linen);
+  color:var(--ink);
+  font-family:'DM Sans',sans-serif;
+  font-weight:400;
+  line-height:1.65;
+  font-size:15px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* squiggles */
+.squig{position:absolute;pointer-events:none;opacity:0.7;}
+.sq1{top:38%;left:2%;width:110px;transform:rotate(-10deg);}
+.sq2{top:10%;right:4%;width:70px;transform:rotate(15deg);}
+.sq3{bottom:18%;left:1%;width:90px;transform:rotate(5deg);}
+.sq4{top:20%;right:2%;width:50px;}
+.sq5{bottom:28%;right:3%;width:100px;transform:rotate(-5deg);}
+.sq6{top:55%;right:2%;width:65px;transform:rotate(20deg);}
+
+/* ── HEADER ── */
+header{
+  background:var(--sage);
+  position:relative;
+  overflow:hidden;
+  padding:0;
+  border-bottom:4px solid var(--ink);
+}
+header::after{
+  content:'';
+  position:absolute;
+  bottom:-2px;right:-2px;
+  width:55%;height:55%;
+  background:var(--linen);
+  clip-path:polygon(30% 100%,100% 0%,100% 100%);
+  pointer-events:none;
+}
+
+.header-top-bar{
+  display:flex;
+  justify-content:space-between;
+  padding:14px 28px 0;
+  font-family:'DM Mono',monospace;
+  font-size:0.62rem;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--ink);
+  position:relative;
+  z-index:2;
+}
+
+/* ── HEADER MAIN: stacked poster layout ── */
+.header-main{
+  position:relative;
+  z-index:2;
+  padding:8px 28px 28px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+h1{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(3.8rem,12vw,8.5rem);
+  font-weight:900;
+  text-transform:uppercase;
+  line-height:0.9;
+  color:var(--ink);
+  letter-spacing:-0.01em;
+  margin-bottom:16px;
+}
+
+/* illustration sits between title and date */
+.garden-art-wrap{
+  width:100%;
+  max-width:580px;
+  margin:4px 0 0;
+  position:relative;
+  z-index:2;
+}
+.garden-art{
+  width:100%;
+  display:block;
+}
+
+.header-date{
+  font-family:'DM Mono',monospace;
+  font-size:0.68rem;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--ink);
+  opacity:0.65;
+  margin:8px 0 0;
+  padding-top:10px;
+  border-top:2px solid rgba(26,25,24,0.2);
+  width:100%;
+  max-width:580px;
+}
+
+/* ── SEARCH ── */
+.search-bar{background:var(--ink);padding:12px 24px;position:sticky;top:0;z-index:100;border-bottom:3px solid var(--purple);}
+.search-inner{max-width:1000px;margin:0 auto;display:flex;gap:14px;align-items:center;}
+.search-input{flex:1;background:rgba(255,255,255,0.08);border:2px solid rgba(255,255,255,0.2);border-radius:4px;padding:9px 14px 9px 38px;color:white;font-family:'DM Sans',sans-serif;font-size:0.88rem;outline:none;transition:border-color 0.2s;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23fff' opacity='0.5' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:12px center;}
+.search-input:focus{border-color:var(--purple);}
+.search-input::placeholder{color:rgba(255,255,255,0.3);}
+.search-count{font-family:'DM Mono',monospace;font-size:0.65rem;color:rgba(255,255,255,0.5);white-space:nowrap;}
+
+/* ── NAV ── */
+nav{background:var(--cream);border-bottom:3px solid var(--ink);overflow-x:auto;position:sticky;top:55px;z-index:99;}
+.nav-inner{max-width:1000px;margin:0 auto;display:flex;}
+.nav-link{font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);text-decoration:none;padding:10px 14px;white-space:nowrap;border-right:1px solid rgba(26,25,24,0.15);transition:background 0.15s,color 0.15s;}
+.nav-link:hover{background:var(--purple);color:white;}
+
+/* ── PAGE ── */
+.page{max-width:1000px;margin:0 auto;padding:0 24px 100px;}
+
+/* ── SECTIONS ── */
+.section{padding:64px 0 0;}
+.section-eyebrow{font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.2em;color:var(--purple);margin-bottom:6px;}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,7vw,4.5rem);font-weight:900;text-transform:uppercase;color:var(--ink);line-height:0.92;letter-spacing:-0.01em;margin-bottom:16px;}
+.section-rule{height:3px;background:var(--ink);margin-bottom:28px;}
+.sub-heading{font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;color:var(--ink);margin:36px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink);}
+
+/* ── PROSE ── */
+.prose{font-size:0.9rem;color:#3A3835;line-height:1.8;margin-bottom:18px;max-width:700px;}
+
+/* ── CALLOUTS ── */
+.callout{display:flex;gap:14px;padding:16px 18px;margin:16px 0;border:2px solid var(--ink);border-radius:6px;background:var(--white);}
+.callout-icon-box{font-size:1.4rem;flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--linen);border:2px solid var(--ink);border-radius:6px;}
+.callout-title{font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:0.06em;margin-bottom:5px;}
+.callout-body{font-size:0.82rem;color:#3A3835;line-height:1.65;}
+.callout-tip{border-left:5px solid var(--green);}
+.callout-warning{border-left:5px solid var(--orange);}
+.callout-danger{border-left:5px solid #CC2200;}
+.callout-info{border-left:5px solid var(--purple);}
+
+/* ── TABLES ── */
+.tw{overflow-x:auto;margin:16px 0 28px;border:2px solid var(--ink);border-radius:6px;background:var(--white);}
+table{width:100%;border-collapse:collapse;font-size:0.8rem;}
+thead{background:var(--ink);}
+th{padding:10px 14px;text-align:left;font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--cream);}
+td{padding:9px 14px;border-bottom:1px solid rgba(26,25,24,0.1);color:#3A3835;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+tr:nth-child(even) td{background:rgba(157,191,180,0.1);}
+tr:hover td{background:rgba(123,94,167,0.07);}
+
+/* ── CARDS ── */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:16px 0 28px;}
+.card{background:var(--white);border:2px solid var(--ink);border-radius:6px;padding:18px;transition:transform 0.12s,box-shadow 0.12s;}
+.card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink);}
+.card-icon{font-size:1.6rem;margin-bottom:10px;}
+.card-title{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:6px;color:var(--ink);}
+.card-body{font-size:0.78rem;color:#4A4745;line-height:1.6;}
+
+/* ── METHOD BOX ── */
+.method-box{background:var(--white);border:2px solid var(--ink);border-radius:6px;padding:18px 20px;margin:14px 0;}
+.method-title{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;padding-bottom:10px;border-bottom:2px solid var(--linen);}
+.method-box ol{padding-left:18px;font-size:0.82rem;color:#3A3835;line-height:1.7;}
+.method-box li{margin-bottom:5px;}
+
+/* ── SEED CARDS ── */
+.seeds-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin:24px 0;}
+.seed-card{background:var(--white);border:2px solid var(--ink);border-radius:8px;overflow:hidden;transition:transform 0.12s,box-shadow 0.12s;}
+.seed-card:hover{transform:translateY(-3px);box-shadow:5px 5px 0 var(--ink);}
+.seed-top{display:flex;gap:12px;padding:16px;background:var(--sage);border-bottom:2px solid var(--ink);align-items:flex-start;}
+.seed-emoji{font-size:2rem;flex-shrink:0;line-height:1;}
+.seed-top-right{flex:1;}
+.seed-name{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;text-transform:uppercase;letter-spacing:0.03em;color:var(--ink);line-height:1.1;margin-bottom:3px;}
+.seed-latin{font-size:0.7rem;color:#4A4745;font-style:italic;margin-bottom:8px;}
+.seed-tags{display:flex;flex-wrap:wrap;gap:5px;}
+.stag{font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:2px 10px;border-radius:3px;border:1.5px solid var(--ink);}
+.tag-green{background:#D4EDDA;color:#1A5C2E;}
+.tag-purple{background:#E8E0F5;color:#4A2D7A;}
+.tag-linen{background:var(--linen);color:var(--ink);}
+.seed-section{padding:12px 16px;border-bottom:1px solid rgba(26,25,24,0.1);}
+.seed-label{font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--purple);margin-bottom:4px;}
+.seed-text{font-size:0.78rem;color:#3A3835;line-height:1.62;}
+.seed-companions{padding:12px 16px;background:rgba(157,191,180,0.15);border-top:1px solid rgba(26,25,24,0.1);border-bottom:1px solid rgba(26,25,24,0.1);}
+.comp-row{font-size:0.76rem;line-height:1.5;margin-bottom:3px;}
+.comp-yes{color:var(--green);font-weight:500;}
+.comp-no{color:var(--orange);font-weight:500;}
+.seed-trouble{padding:12px 16px;background:rgba(212,80,26,0.06);border-top:2px solid rgba(212,80,26,0.2);}
+.seed-trouble .seed-label{color:var(--orange);}
+.seed-trouble .seed-text{color:#5A3020;}
+
+/* ── SEARCH ── */
+mark{background:rgba(123,94,167,0.25);color:var(--ink);border-radius:2px;padding:0 2px;}
+.search-hidden{display:none!important;}
+.no-results{text-align:center;padding:60px 24px;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:700;text-transform:uppercase;color:rgba(26,25,24,0.3);display:none;}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);color:rgba(232,223,200,0.7);padding:28px 24px;text-align:center;font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;border-top:4px solid var(--purple);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:640px){
+  .page{padding:0 16px 80px;}
+  h1{font-size:clamp(3rem,14vw,5rem);}
+  .seeds-grid{grid-template-columns:1fr;}
+  .cards-grid{grid-template-columns:1fr;}
+  .nav-link{padding:9px 10px;font-size:0.7rem;}
+  .squig{display:none;}
+  .garden-art-wrap{max-width:100%;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="squig sq1" viewBox="0 0 120 40" fill="none"><path d="M5 20 C20 5 35 35 50 20 C65 5 80 35 95 20 C105 10 115 25 118 20" stroke="#7B5EA7" stroke-width="5" stroke-linecap="round" fill="none"/></svg><svg class="squig sq2" viewBox="0 0 80 80" fill="none"><path d="M10 70 C25 10 55 70 70 10" stroke="#7B5EA7" stroke-width="5" stroke-linecap="round" fill="none"/></svg><svg class="squig sq3" viewBox="0 0 100 50" fill="none"><path d="M5 25 C20 5 35 45 50 25 C65 5 80 45 95 25" stroke="#7B5EA7" stroke-width="5" stroke-linecap="round" fill="none"/></svg><svg class="squig sq4" viewBox="0 0 60 100" fill="none"><path d="M30 5 C5 25 55 45 30 65 C5 85 55 95 30 98" stroke="#7B5EA7" stroke-width="5" stroke-linecap="round" fill="none"/></svg>
+  <div class="header-top-bar">
+    <span>6123 Dauphine St.</span>
+    <span>Zone 9b</span>
+    <span>Personal Growing Guide</span>
+  </div>
+  <div class="header-main">
+    <h1>Baudier<br>Yarden</h1>
+    <div class="garden-art-wrap">
+      <svg class="garden-art" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Tomato — bold round shape top left -->
+  <ellipse cx="90" cy="90" rx="52" ry="48" fill="#D4501A" opacity="0.85"/>
+  <path d="M90 42 C90 42 88 28 82 22 C82 22 92 18 96 26" fill="#2D7A4A" stroke="#1A1918" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M90 42 C90 42 100 30 108 28" fill="none" stroke="#2D7A4A" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="90" cy="90" rx="52" ry="48" fill="none" stroke="#1A1918" stroke-width="2.8"/>
+  <path d="M68 72 Q80 60 95 68" fill="none" stroke="#1A1918" stroke-width="1.8" opacity="0.4"/>
+
+  <!-- Jalapeño pepper — long curved shape top center -->
+  <path d="M240 50 C265 38 300 42 328 55 C345 63 352 78 345 90 C338 102 320 105 300 98 C272 88 248 82 238 70 C232 62 233 55 240 50Z" fill="#7B5EA7" opacity="0.85"/>
+  <path d="M345 90 C355 95 360 88 358 80" fill="none" stroke="#7B5EA7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M240 50 C265 38 300 42 328 55 C345 63 352 78 345 90 C338 102 320 105 300 98 C272 88 248 82 238 70 C232 62 233 55 240 50Z" fill="none" stroke="#1A1918" stroke-width="2.8"/>
+
+  <!-- Cucumber — diagonal long shape center -->
+  <path d="M185 155 C200 130 235 122 265 130 C290 137 305 155 295 172 C282 192 248 198 218 190 C192 183 175 175 185 155Z" fill="#9DBFB4" opacity="0.9"/>
+  <ellipse cx="295" cy="168" rx="10" ry="8" fill="#9DBFB4" stroke="#1A1918" stroke-width="2" opacity="0.8"/>
+  <path d="M185 155 C200 130 235 122 265 130 C290 137 305 155 295 172 C282 192 248 198 218 190 C192 183 175 175 185 155Z" fill="none" stroke="#1A1918" stroke-width="2.8"/>
+  <path d="M210 148 C230 138 255 138 275 148" fill="none" stroke="#1A1918" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Watermelon slice — bold wedge right side -->
+  <path d="M400 60 L480 60 Q510 60 510 90 L510 160 Q510 190 480 190 L420 190 Q390 170 380 140 L380 90 Q380 60 400 60Z" fill="#D4501A" opacity="0.75"/>
+  <path d="M400 60 L480 60 Q510 60 510 90 L510 160 Q510 190 480 190 L420 190 Q390 170 380 140 L380 90 Q380 60 400 60Z" fill="none" stroke="#1A1918" stroke-width="2.8"/>
+  <!-- rind -->
+  <path d="M398 62 Q445 55 508 92" fill="none" stroke="#2D7A4A" stroke-width="8" opacity="0.7" stroke-linecap="round"/>
+  <!-- seeds -->
+  <ellipse cx="430" cy="110" rx="6" ry="9" fill="#1A1918" opacity="0.7" transform="rotate(-15 430 110)"/>
+  <ellipse cx="460" cy="130" rx="6" ry="9" fill="#1A1918" opacity="0.7" transform="rotate(10 460 130)"/>
+  <ellipse cx="420" cy="150" rx="6" ry="9" fill="#1A1918" opacity="0.7" transform="rotate(-20 420 150)"/>
+  <ellipse cx="480" cy="110" rx="5" ry="8" fill="#1A1918" opacity="0.5" transform="rotate(5 480 110)"/>
+
+  <!-- Basil leaf — organic shape bottom left -->
+  <path d="M55 210 C40 190 45 165 65 158 C85 151 108 162 115 182 C122 202 112 228 92 235 C72 242 65 228 55 210Z" fill="#2D7A4A" opacity="0.8"/>
+  <path d="M55 210 C40 190 45 165 65 158 C85 151 108 162 115 182 C122 202 112 228 92 235 C72 242 65 228 55 210Z" fill="none" stroke="#1A1918" stroke-width="2.8"/>
+  <path d="M85 160 C85 160 85 200 85 230" fill="none" stroke="#1A1918" stroke-width="1.8" opacity="0.5"/>
+  <path d="M85 178 C75 170 62 172 58 180" fill="none" stroke="#1A1918" stroke-width="1.5" opacity="0.4"/>
+  <path d="M85 195 C95 188 108 190 112 198" fill="none" stroke="#1A1918" stroke-width="1.5" opacity="0.4"/>
+  <path d="M85 212 C75 205 62 210 60 218" fill="none" stroke="#1A1918" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Pumpkin — round ribbed bottom center -->
+  <path d="M230 250 C230 220 250 205 270 205 C290 205 310 220 310 250 C310 275 290 292 270 292 C250 292 230 275 230 250Z" fill="#D4870A" opacity="0.85"/>
+  <!-- ribs -->
+  <path d="M270 207 C265 230 265 265 270 290" fill="none" stroke="#1A1918" stroke-width="1.8" opacity="0.4"/>
+  <path d="M252 212 C248 235 250 265 256 286" fill="none" stroke="#1A1918" stroke-width="1.5" opacity="0.35"/>
+  <path d="M288 212 C292 235 290 265 284 286" fill="none" stroke="#1A1918" stroke-width="1.5" opacity="0.35"/>
+  <!-- stem -->
+  <path d="M270 205 C268 192 272 185 275 180" fill="none" stroke="#2D7A4A" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M272 195 C280 188 290 185 295 180" fill="none" stroke="#2D7A4A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M230 250 C230 220 250 205 270 205 C290 205 310 220 310 250 C310 275 290 292 270 292 C250 292 230 275 230 250Z" fill="none" stroke="#1A1918" stroke-width="2.8"/>
+
+  <!-- Corn — tall narrow shape right bottom -->
+  <path d="M430 200 C420 185 420 160 430 145 C440 130 460 128 470 140 C480 152 480 178 472 200 C465 218 448 228 438 220 C434 216 432 210 430 200Z" fill="#E8DFC8" stroke="#1A1918" stroke-width="2.8"/>
+  <!-- kernels -->
+  <circle cx="442" cy="155" r="4" fill="#D4870A" opacity="0.8"/>
+  <circle cx="454" cy="155" r="4" fill="#D4870A" opacity="0.8"/>
+  <circle cx="442" cy="167" r="4" fill="#D4870A" opacity="0.8"/>
+  <circle cx="454" cy="167" r="4" fill="#D4870A" opacity="0.8"/>
+  <circle cx="442" cy="179" r="4" fill="#D4870A" opacity="0.8"/>
+  <circle cx="454" cy="179" r="4" fill="#D4870A" opacity="0.8"/>
+  <circle cx="448" cy="191" r="4" fill="#D4870A" opacity="0.7"/>
+  <!-- husk -->
+  <path d="M428 200 C415 190 412 168 420 150" fill="none" stroke="#2D7A4A" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M472 200 C485 190 487 165 478 145" fill="none" stroke="#2D7A4A" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <!-- silk -->
+  <path d="M442 130 C438 115 440 105 445 100" fill="none" stroke="#D4870A" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M448 128 C448 112 450 102 455 97" fill="none" stroke="#D4870A" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M454 130 C458 114 460 103 462 98" fill="none" stroke="#D4870A" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Carrot — diagonal bottom right area -->
+  <path d="M500 240 C490 225 488 205 496 195 C504 185 518 186 526 198 C534 210 532 232 522 248 C514 260 504 255 500 240Z" fill="#D4501A" opacity="0.75"/>
+  <path d="M500 240 C490 225 488 205 496 195 C504 185 518 186 526 198 C534 210 532 232 522 248 C514 260 504 255 500 240Z" fill="none" stroke="#1A1918" stroke-width="2.5"/>
+  <path d="M508 187 C505 174 506 165 510 158" fill="none" stroke="#2D7A4A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M510 165 C504 155 498 150 494 148" fill="none" stroke="#2D7A4A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M510 165 C516 156 522 152 526 150" fill="none" stroke="#2D7A4A" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Small decorative dots (like the blueberries/grapes in reference) -->
+  <circle cx="155" cy="255" r="9" fill="#7B5EA7" opacity="0.7" stroke="#1A1918" stroke-width="1.8"/>
+  <circle cx="175" cy="268" r="9" fill="#7B5EA7" opacity="0.7" stroke="#1A1918" stroke-width="1.8"/>
+  <circle cx="195" cy="258" r="9" fill="#7B5EA7" opacity="0.7" stroke="#1A1918" stroke-width="1.8"/>
+  <circle cx="165" cy="278" r="9" fill="#7B5EA7" opacity="0.65" stroke="#1A1918" stroke-width="1.8"/>
+  <circle cx="185" cy="284" r="9" fill="#7B5EA7" opacity="0.65" stroke="#1A1918" stroke-width="1.8"/>
+  <circle cx="145" cy="272" r="9" fill="#7B5EA7" opacity="0.6" stroke="#1A1918" stroke-width="1.8"/>
+
+  <!-- Blob shape behind dots (like the reference) -->
+  <path d="M130 278 C128 258 140 248 158 250 C176 252 205 258 210 272 C215 286 205 298 188 300 C168 302 132 296 130 278Z" fill="#7B5EA7" opacity="0.2" stroke="#1A1918" stroke-width="1.8"/>
+
+</svg>
+    </div>
+    <div class="header-date">Updated June 2026</div>
+  </div>
+</header>
+
+<div class="search-bar">
+  <div class="search-inner">
+    <input class="search-input" type="text" id="qi" placeholder="Search plants, months, companions, tips…" autocomplete="off">
+    <span class="search-count" id="qc"></span>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-inner"><a href="#yard" class="nav-link">MY YARD</a><a href="#calendar" class="nav-link">CALENDAR</a><a href="#beds" class="nav-link">SEEDS & BEDS</a><a href="#trees" class="nav-link">TREES</a><a href="#shed-bed" class="nav-link">SHED BED</a><a href="#fertilizer" class="nav-link">SOIL</a><a href="#natives" class="nav-link">NATIVES</a><a href="#weeds" class="nav-link">WEEDS</a><a href="#pests" class="nav-link">PESTS</a><a href="#tomatoes" class="nav-link">TOMATOES</a></div>
+</nav>
+
+<div class="page" id="page">
+
+<section id="yard" class="section">
+  <div class="section-eyebrow">OVERVIEW</div>
+  <h2 class="section-title">MY YARD — LAYOUT &amp; MICROCLIMATE</h2>
+  <div class="section-rule"></div>
+  <p class="prose">New Orleans Zone 9b backyard with a mature pecan canopy, large banana grove on the west side, two galvanized raised beds connected by a cow panel arch trellis, a small greenhouse, and a perennial border bed by the shed. The beds sit in the best sun corridor in the yard — open southern sky with roughly 6–7 hours of direct sun daily. Shade arrives from the northeast around 5pm.</p>
+  <div class="callout callout-tip"><div class="callout-icon-box">🌿</div><div><div class="callout-title">FOOD FOREST LAYERS ALREADY IN PLACE</div><div class="callout-body">Canopy (pecan) → Sub-canopy (banana, fig) → Shrub (border perennials) → Ground (raised beds) → Vine (arch crops). Add elderberry, pawpaw and wine cap mushrooms to complete the system.</div></div></div>
+  <div class="cards-grid"><div class="card"><div class="card-icon">☀️</div><div class="card-title">SUN CORRIDOR</div><div class="card-body"></div></div><div class="card"><div class="card-icon">🌳</div><div class="card-title">PECAN TREE</div><div class="card-body"></div></div><div class="card"><div class="card-icon">🍌</div><div class="card-title">BANANA GROVE</div><div class="card-body"></div></div><div class="card"><div class="card-icon">🏠</div><div class="card-title">GREENHOUSE</div><div class="card-body"></div></div></div>
+  <div class="tw"><table><thead><tr><th>Zone</th><th>Conditions</th><th>Best Use</th></tr></thead><tbody><tr><td>Banana grove (west)</td><td>Dappled shade, high humidity, rich soil</td><td>Turmeric, ginger, taro, shade herbs</td></tr><tr><td>Under pecan (center-back)</td><td>Dappled shade, mineral leaf litter</td><td>Native groundcovers, pawpaw, spiderwort, fig</td></tr><tr><td>Raised bed area (center)</td><td>Best sun 6–7hrs, open sky south</td><td>Current beds — right call!</td></tr><tr><td>Shed border (right)</td><td>Good southern exposure, sheltered</td><td>Perennial herbs, natives, cut flowers, coral vine</td></tr><tr><td>Greenhouse (right-back)</td><td>Protected, controlled</td><td>Seed starting, overwintering tropicals</td></tr></tbody></table></div>
+</section>
+
+<section id="calendar" class="section">
+  <div class="section-eyebrow">SEASON PLANNING</div>
+  <h2 class="section-title">Full Year Planting Calendar</h2>
+  <div class="section-rule"></div>
+  <div class="callout callout-info"><div class="callout-icon-box">📅</div><div><div class="callout-title">NEW ORLEANS KEY INSIGHT</div><div class="callout-body">Your &#x27;winter&#x27; is your spring. October–March is prime growing season. Summer is survival mode. All timings are specific to your 26 seeds.</div></div></div>
+  <div class="tw"><table><thead><tr><th>MONTH</th><th>GREENHOUSE</th><th>DIRECT SOW</th><th>TRANSPLANT</th><th>NOTES</th></tr></thead><tbody><tr><td>January</td><td>All tomatoes · All peppers (heat mat!)</td><td>Bachelor buttons · Lettuce · Dill · Chard</td><td>—</td><td>Peppers need 80°F+ soil</td></tr><tr><td>February</td><td>Mammoth basil · Bee balm</td><td>Borage · Lettuce · Chard · Bachelor buttons</td><td>—</td><td>Last frost ~mid-Feb</td></tr><tr><td>March</td><td>Birdhouse gourd · Cucumbers</td><td>Bush beans · Soybeans · Corn</td><td>Tomatoes · Peppers · Basil</td><td>Bury tomato stems deep</td></tr><tr><td>April</td><td>—</td><td>Watermelons · Peanuts · Zucchini</td><td>Cucumbers to arch</td><td>Watermelons: vine onto lawn</td></tr><tr><td>May–June</td><td>—</td><td>—</td><td>—</td><td>Peak spring harvest. Prep for July sowing.</td></tr><tr><td>Late July</td><td>—</td><td>Cinderella pumpkin · Delicata squash</td><td>—</td><td>Pumpkin slings at tennis-ball size!</td></tr><tr><td>August</td><td>Cabbage · Basil succession</td><td>—</td><td>—</td><td>Cut tomatoes back 1/3 for fall flush</td></tr><tr><td>September</td><td>—</td><td>Carrot · Lettuce · Chard · Bachelor buttons · Borage · Corn</td><td>—</td><td>Biggest planting window! Keep carrot moist 3 wks.</td></tr><tr><td>October</td><td>—</td><td>Lettuce · More carrots</td><td>Cabbage outdoors</td><td>Harvest pumpkins · Pecan harvest!</td></tr><tr><td>Nov–Dec</td><td>Tomatoes + peppers again!</td><td>Lettuce · Chard · Dill</td><td>—</td><td>Dec start = Feb transplant = Apr–Jun harvest</td></tr></tbody></table></div>
+  <div class="sub-heading">Trellis Arch Rotation</div>
+  <div class="tw"><table><thead><tr><th>SEASON</th><th>LEFT ARCH</th><th>RIGHT ARCH</th></tr></thead><tbody><tr><td>Late Jul–Oct</td><td>Cinderella Pumpkin 🎃</td><td>Delicata Squash 🎃</td></tr><tr><td>Oct–Feb</td><td>Bachelor Buttons / open</td><td>Birdhouse Gourd (drying on vine)</td></tr><tr><td>Feb–Jun</td><td>Chocolate Stripes Tomato 🍅</td><td>Ashley + Boston Pickling Cucumbers 🥒</td></tr></tbody></table></div>
+</section>
+
+<section id="beds" class="section">
+  <div class="section-eyebrow">SEEDS · GREENHOUSE · RAISED BEDS</div>
+  <h2 class="section-title">Your 26 Varieties</h2>
+  <div class="section-rule"></div>
+  <p class="prose">Complete seed starting guide for every variety in your collection, with companion planting for each.</p>
+  <div class="callout callout-tip"><div class="callout-icon-box">♻️</div><div><div class="callout-title">PERENNIALS — NEVER PULL THESE</div><div class="callout-body">All peppers, Bee Balm, and Spearmint are perennial in Zone 9b. Cut back in February, never pull. Borage, Bachelor Buttons, and Dill self-seed freely.</div></div></div>
+  <div class="callout callout-warning"><div class="callout-icon-box">🌡️</div><div><div class="callout-title">NEW ORLEANS TIMING KEY</div><div class="callout-body">Peppers need 80°F+ to germinate — heat mat essential. Start tomatoes and peppers in December for best results.</div></div></div>
+  <div class="sub-heading">Quick Reference — All 26 Seeds</div>
+  <div class="tw"><table><thead><tr><th></th><th>SEED</th><th>METHOD</th><th>WHEN</th><th>DAYS</th></tr></thead><tbody><tr><td>🍉</td><td>Cal-Sweet Watermelon</td><td>Direct</td><td>April</td><td>80–90 days</td></tr><tr><td>🍉</td><td>Dixie Queen Watermelon</td><td>Direct</td><td>April</td><td>85 days</td></tr><tr><td>🥕</td><td>Purple Carrot</td><td>Direct</td><td>Sept–Nov</td><td>70–80 days</td></tr><tr><td>🥬</td><td>Slobolt Loose Leaf Lettuce</td><td>Direct</td><td>Sept–Mar</td><td>45–50 days</td></tr><tr><td>🌿</td><td>Bouquet Dill</td><td>Direct</td><td>Sept–Mar</td><td>40–60 days</td></tr><tr><td>🥬</td><td>All Seasons Cabbage</td><td>Greenhouse</td><td>Aug–Sept start</td><td>75–95 days</td></tr><tr><td>🫘</td><td>Arikara Yellow Bush Bean</td><td>Direct</td><td>Mar–May, Aug–Sept</td><td>60–65 days</td></tr><tr><td>🎃</td><td>Delicata Squash</td><td>Direct</td><td>Late July</td><td>80–100 days</td></tr><tr><td>🌽</td><td>Ambrosia Sweet Corn</td><td>Direct</td><td>Feb–Mar, Sept</td><td>75 days</td></tr><tr><td>🥒</td><td>Boston Pickling Cucumber</td><td>Direct</td><td>Late Jan–Feb / March</td><td>55–65 days</td></tr><tr><td>🍅</td><td>Chocolate Stripes Tomato</td><td>Greenhouse</td><td>Dec–Jan</td><td>75–85 days</td></tr><tr><td>🍅</td><td>Matt&#x27;s Wild Cherry Tomato</td><td>Greenhouse</td><td>Dec–Jan</td><td>60–65 days</td></tr><tr><td>🫑</td><td>Jimmy Nardello Pepper</td><td>Greenhouse</td><td>Dec–Jan</td><td>80–90 days</td></tr><tr><td>🌶️</td><td>Jalapeño</td><td>Greenhouse</td><td>Dec–Jan</td><td>70–85 days</td></tr><tr><td>🌶️</td><td>Sweet Banana Pepper</td><td>Greenhouse</td><td>Dec–Jan</td><td>70–75 days</td></tr><tr><td>🎃</td><td>Cinderella Pumpkin</td><td>Direct</td><td>Late July</td><td>100–110 days</td></tr><tr><td>🥜</td><td>Virginia Peanut</td><td>Direct</td><td>April–May</td><td>120–130 days</td></tr><tr><td>🐦</td><td>Birdhouse Gourd</td><td>Direct</td><td>March–April</td><td>110–130 days</td></tr><tr><td>🥒</td><td>Italian Striped Zucchini</td><td>Direct</td><td>Mar–Apr, Aug–Sept</td><td>50–55 days</td></tr><tr><td>🌿</td><td>Borage</td><td>Direct</td><td>Feb–Apr, Sept–Oct</td><td>50–60 days</td></tr><tr><td>🌺</td><td>Bee Balm</td><td>Greenhouse</td><td>Jan–Feb</td><td>Blooms yr 2</td></tr><tr><td>🌿</td><td>Spearmint</td><td>Greenhouse</td><td>Jan–Feb</td><td>Year-round</td></tr><tr><td>🌸</td><td>Mammoth Basil</td><td>Greenhouse</td><td>Feb–Mar</td><td>60–75 days</td></tr><tr><td>🌸</td><td>Pink Swiss Chard</td><td>Direct</td><td>Sept–Mar</td><td>50–60 days</td></tr></tbody></table></div>
+  <div class="sub-heading">Living Mulch — Fill Every Gap</div>
+  <div class="tw"><table><thead><tr><th>PLANT</th><th>ROLE</th><th>PLANT NOW?</th></tr></thead><tbody><tr><td>Sweet potato vine</td><td>Best summer living mulch — spreads fast, edible, loves heat</td><td>✦ Yes, immediately</td></tr><tr><td>Nasturtiums</td><td>Edible flowers, aphid trap crop</td><td>✦ Yes, immediately</td></tr><tr><td>Purslane</td><td>Self-spreading, holds moisture, edible, thrives in heat</td><td>✦ Yes, direct sow</td></tr><tr><td>Dwarf French marigolds</td><td>Nematode deterrent + pest repellent</td><td>✦ Yes, transplants now</td></tr><tr><td>Malabar spinach</td><td>Heat-loving edible that climbs</td><td>✦ Yes, at trellis base</td></tr><tr><td>Creeping thyme</td><td>Flat, deters pests, edible, perennial in 9b</td><td>✦ Yes, transplants</td></tr><tr><td>Sensitive Plant</td><td>Native nitrogen-fixer, stays flat</td><td>✦ Between beds</td></tr></tbody></table></div>
+  <div class="sub-heading">Your 26 Seed Varieties</div>
+  <div class="seeds-grid">
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🍉</span>
+    <div class="seed-top-right">
+      <div class="seed-name">CAL-SWEET WATERMELON</div>
+      <div class="seed-latin">Citrullus lanatus</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">April</span>
+        <span class="stag tag-linen">80–90 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow preferred in April when soil is 70°F+. Use biodegradable pots if starting indoors — taproots hate disturbance. Sow 2 seeds, thin to 1. Direct vine OUT of bed onto lawn to sprawl.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Ripe when: tendril nearest fruit is brown and dry, ground spot turns yellow, hollow thud when tapped. Reduce water near harvest to concentrate sugars.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Nasturtiums, marigolds, radishes</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, brassicas</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Hollow heart: inconsistent watering. Poor sweetness: too much nitrogen. Vine wilts: squash vine borer — check stem base.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🍉</span>
+    <div class="seed-top-right">
+      <div class="seed-name">DIXIE QUEEN WATERMELON</div>
+      <div class="seed-latin">Citrullus lanatus</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">April</span>
+        <span class="stag tag-linen">85 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow April in warm soil, 3 seeds per hill, thin to 2. Space hills 6–8 ft apart. Southern heirloom with thick rind that resists splitting in Louisiana summer rains.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Harvest same cues as Cal-Sweet. Don&#x27;t grow both adjacent if saving seeds — they may cross-pollinate.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Nasturtiums, borage, corn</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, potatoes</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Fruit splitting: inconsistent water — mulch heavily. No fruit set: need 2 hills for cross-pollination, or hand-pollinate with a paintbrush.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🥕</span>
+    <div class="seed-top-right">
+      <div class="seed-name">PURPLE CARROT</div>
+      <div class="seed-latin">Daucus carota</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Sept–Nov</span>
+        <span class="stag tag-linen">70–80 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">ALWAYS direct sow — carrots hate transplanting. Sow thinly, cover ¼ inch fine soil or vermiculite. Keep surface consistently moist every day for 2–3 weeks until germination. Cover with burlap to retain moisture.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Purple color intensifies in cooler temperatures. Best harvest October–February after cool nights. Your raised beds are perfect — loose, deep, rock-free.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Rosemary, sage, chives, leeks, onions</div>
+    <div class="comp-row comp-no">✕ avoid: Dill — stunts carrots</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">No germination: surface dried out — the #1 failure point. Keep moist without fail. Forked roots: clods in soil — add fine compost on top.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🥬</span>
+    <div class="seed-top-right">
+      <div class="seed-name">SLOBOLT LOOSE LEAF LETTUCE</div>
+      <div class="seed-latin">Lactuca sativa</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Sept–Mar</span>
+        <span class="stag tag-linen">45–50 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Surface sow — lettuce needs light to germinate, barely cover. Succession sow every 3 weeks September through March. Slobolt resists bolting 2–3 extra weeks vs regular varieties.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Cut-and-come-again: harvest outer leaves only, never pull whole plant. December–February plants will be your best — cool temps, no bolt pressure.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Chives, garlic, radishes, strawberries</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, celery</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Bitter leaves: heat stress or irregular watering. Bolting: temps above 75°F consistently — harvest immediately and resow in fall.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌿</span>
+    <div class="seed-top-right">
+      <div class="seed-name">BOUQUET DILL</div>
+      <div class="seed-latin">Anethum graveolens</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Sept–Mar</span>
+        <span class="stag tag-linen">40–60 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">ALWAYS direct sow — taproot resents transplanting. Scatter seeds thinly, cover lightly. Self-seeds freely once established. Pair with your cucumbers for fresh pickles.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Harvest foliage before flowers open for best flavor. Let some go to seed for self-seeding and pickling. Black Swallowtail caterpillars will eat it — let them, they become butterflies!</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Cabbage, lettuce, onion</div>
+    <div class="comp-row comp-no">✕ avoid: Carrots, tomatoes</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Leggy: not enough sun or too warm. Disappears: caterpillars ate it — resow immediately. Bolting fast: harvest everything, save seeds.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🥬</span>
+    <div class="seed-top-right">
+      <div class="seed-name">ALL SEASONS CABBAGE</div>
+      <div class="seed-latin">Brassica oleracea</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Aug–Sept start</span>
+        <span class="stag tag-linen">75–95 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start indoors in greenhouse August–September in cell trays. Thin to 1 per cell. Transplant outdoors October–November at 18 inch spacing. Heavy feeder — amend bed with compost before planting.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Water consistently — irregular watering causes heads to split. Harvest when head feels firm and solid when squeezed. October–March harvest is ideal for New Orleans.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Dill, mint, rosemary, thyme, nasturtiums</div>
+    <div class="comp-row comp-no">✕ avoid: Strawberries, tomatoes, peppers</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Heads split: twist plant slightly near maturity to slow growth. Caterpillar holes: cabbage loopers — check leaf undersides, hand-pick or use Bt. Yellowing leaves: nitrogen deficiency.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🫘</span>
+    <div class="seed-top-right">
+      <div class="seed-name">ARIKARA YELLOW BUSH BEAN</div>
+      <div class="seed-latin">Phaseolus vulgaris</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Mar–May, Aug–Sept</span>
+        <span class="stag tag-linen">60–65 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow only — beans hate transplanting. Sow 4–6 inches apart, 1–1.5 inches deep. Do not pre-soak. Inoculate seeds with rhizobium for maximum nitrogen fixation. Two seasons: spring and fall.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Native American heirloom — exceptional drought and heat tolerance. Nitrogen fixer: after harvest, chop plants into bed as green manure.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Squash, corn, basil, marigolds</div>
+    <div class="comp-row comp-no">✕ avoid: Onions, fennel, garlic</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Pods tough: harvested too late — pick every 2 days. No pods: too much nitrogen from other legumes — don&#x27;t fertilize. Rust spots: improve airflow, avoid overhead watering.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🎃</span>
+    <div class="seed-top-right">
+      <div class="seed-name">DELICATA SQUASH</div>
+      <div class="seed-latin">Cucurbita pepo</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Late July</span>
+        <span class="stag tag-linen">80–100 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow late July at arch base alongside Cinderella pumpkin. Sow 2 seeds, thin to strongest. Train up arch — small fruit (1–2 lbs) doesn&#x27;t need slings like the Cinderella.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Cream skin with green stripes. Edible skin — no peeling needed! Harvest when fully cream/tan with dried corky stem. Stores months at room temp.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Beans, corn, nasturtiums, marigolds</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, brassicas</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Powdery mildew: almost inevitable in Louisiana — manageable, plant usually still fruits. Blossom drop: hand-pollinate morning female flowers. Vine borer: sawdust at stem base — inject Bt.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌽</span>
+    <div class="seed-top-right">
+      <div class="seed-name">AMBROSIA SWEET CORN</div>
+      <div class="seed-latin">Zea mays</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Feb–Mar, Sept</span>
+        <span class="stag tag-linen">75 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow in 4×4 BLOCK minimum — corn is wind-pollinated and rows alone give poor ear fill. Space plants 10–12 inches. Sow 2 per spot, thin to 1. Soil must be 60°F+.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Hand-pollinate by shaking tassels over silks each morning. Eat within hours of harvest — sweetness fades fast. Drop mineral oil on silk tips when silks emerge to deter earworms.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Beans, squash, borage, sunflowers</div>
+    <div class="comp-row comp-no">✕ avoid: Tomatoes — competing heavy feeders</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Poorly filled ears: poor pollination — hand-pollinate daily. Earworms: mineral oil on silks. Smut (gray galls): remove and bag, don&#x27;t compost.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🥒</span>
+    <div class="seed-top-right">
+      <div class="seed-name">BOSTON PICKLING CUCUMBER</div>
+      <div class="seed-latin">Cucumis sativus</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Late Jan–Feb / March</span>
+        <span class="stag tag-linen">55–65 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start in biodegradable pots 3–4 weeks before transplant, or direct sow in March when soil warms. Train immediately onto arch trellis. Already proven in your garden!</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Pick at 3–4 inches for pickling, daily. Check inside arch tunnel — cucumbers hide up there. Pair with bouquet dill for fresh pickles.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Dill, borage, nasturtiums, radishes</div>
+    <div class="comp-row comp-no">✕ avoid: Sage, strong herbs</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Bitter cucumbers: heat stress or irregular watering. Sudden wilt: cucumber beetle spreading bacterial wilt — pull affected plants immediately.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🍅</span>
+    <div class="seed-top-right">
+      <div class="seed-name">CHOCOLATE STRIPES TOMATO</div>
+      <div class="seed-latin">Solanum lycopersicum</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Dec–Jan</span>
+        <span class="stag tag-linen">75–85 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start in greenhouse December–January. Bury stem DEEP when transplanting — tomatoes root along buried stem. Pinch suckers weekly. Train up arch, tying weekly.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Beautiful dark red/brown 8–12 oz fruit with green stripes. Never refrigerate. Harvest at first color change and ripen on counter.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Basil, borage, marigolds, parsley, chives</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, brassicas, corn</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Blossom drop: heat above 90°F — normal, resumes in September. Blossom end rot: eggshells in compost tea + consistent watering. Cracking: sudden rain after dry spell — mulch well.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🍅</span>
+    <div class="seed-top-right">
+      <div class="seed-name">MATT&#x27;S WILD CHERRY TOMATO</div>
+      <div class="seed-latin">Solanum lycopersicum</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Dec–Jan</span>
+        <span class="stag tag-linen">60–65 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start greenhouse December–January. Most heat-tolerant tomato in your collection — ancestrally from hot Mexico. May keep producing through July when others stop. Very vigorous — give its own pot early.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Hundreds of tiny intensely-flavored fruits. Self-seeds prolifically — you may get volunteers for years. Eat straight off the vine.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Basil, borage, marigolds, parsley</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, brassicas</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Cracking: inconsistent watering — harvest frequently. Overwhelming quantity: pinch some growing tips to focus energy.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🫑</span>
+    <div class="seed-top-right">
+      <div class="seed-name">JIMMY NARDELLO PEPPER</div>
+      <div class="seed-latin">Capsicum annuum</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Dec–Jan</span>
+        <span class="stag tag-linen">80–90 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start greenhouse December–January on heat mat (80–85°F minimum). 14–21 day germination. Harden off 2 weeks before March outdoor planting. Perennial in 9b — cut back by 2/3 in February!</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Long, thin, bright red sweet pepper — 0 Scoville. One of the world&#x27;s most prized frying peppers. Year 2 plants are dramatically more productive.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Basil, carrots, tomatoes, marigolds</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, brassicas</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Flower drop: temp extremes — normal, will resume. Slow germination: soil too cool — 80°F minimum, no exceptions. Purple leaves: phosphorus deficiency in cold soil — wait for warmth.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌶️</span>
+    <div class="seed-top-right">
+      <div class="seed-name">JALAPEÑO</div>
+      <div class="seed-latin">Capsicum annuum</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Dec–Jan</span>
+        <span class="stag tag-linen">70–85 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start greenhouse December–January on heat mat. Same requirements as all peppers. Perennial in 9b — cut back in February for bigger year 2 plant. Smoke red jalapeños over your pecan wood for homemade chipotles!</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Cork lines (stretch marks on skin) = mature and at peak heat. Harvest green for classic heat or let ripen red for sweeter, slightly less hot fruit.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Basil, carrots, tomatoes, marigolds</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, apricot</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Not hot enough: more sun and slight water stress increases capsaicin. Pepper weevils: holes in fruit — remove and trash, never compost.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌶️</span>
+    <div class="seed-top-right">
+      <div class="seed-name">SWEET BANANA PEPPER</div>
+      <div class="seed-latin">Capsicum annuum</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Dec–Jan</span>
+        <span class="stag tag-linen">70–75 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start greenhouse December–January alongside other peppers — identical requirements. Perennial in 9b. One plant yields dozens of 6–8 inch fruits. Great for pickling — the surplus is extraordinary pickled.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Harvest yellow-green through orange-red — each stage has different sweetness. Red = sweetest. Heaviest harvest usually September–October as temps moderate.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Basil, carrots, tomatoes, marigolds</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, brassicas</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Same as other peppers. Anthracnose (soft spots): improve airflow, harvest promptly, avoid overhead watering.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🎃</span>
+    <div class="seed-top-right">
+      <div class="seed-name">CINDERELLA PUMPKIN</div>
+      <div class="seed-latin">Cucurbita maxima</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Late July</span>
+        <span class="stag tag-linen">100–110 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow at arch base late July. Plant 2–3 seeds 1 inch deep, thin to 1 strongest vine per arch side. Train onto arch immediately — vine moves fast in the first week.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Fruits reach 15–25 lbs — MUST make pantyhose slings tied to arch when fruit is tennis-ball size. Each vine produces 2–3 fruits. Flesh is culinary-grade: extraordinary for soup and pie.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Beans, corn, nasturtiums, marigolds</div>
+    <div class="comp-row comp-no">✕ avoid: Brassicas, fennel</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Fruit drops before maturity: no sling support — always sling by tennis-ball size. Poor fruit set: hand-pollinate female flowers (tiny pumpkin at base) with brush.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🥜</span>
+    <div class="seed-top-right">
+      <div class="seed-name">VIRGINIA PEANUT</div>
+      <div class="seed-latin">Arachis hypogaea</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">April–May</span>
+        <span class="stag tag-linen">120–130 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Plant raw (NOT roasted!) shelled peanuts 2 inches deep, 6 inches apart. Soil must be 65°F+. Do NOT fertilize with nitrogen. Do NOT disturb soil once pegging begins — the plant shoots pegs down into soil to form pods.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Already growing in your garden! Harvest when leaves yellow. Cure upside down in dry ventilated spot 2–4 weeks before eating. Boil some green-stage for traditional Louisiana boiled peanuts!</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Sweet potatoes, squash, sunflowers</div>
+    <div class="comp-row comp-no">✕ avoid: Onions, garlic</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Empty shells: poor soil contact during pegging. Mold on shells: cure in better-ventilated spot. Leaf spots: common in Louisiana, rarely fatal.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🐦</span>
+    <div class="seed-top-right">
+      <div class="seed-name">BIRDHOUSE GOURD</div>
+      <div class="seed-latin">Lagenaria siceraria</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">March–April</span>
+        <span class="stag tag-linen">110–130 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Soak seeds 24 hours + nick seed coat with nail file before planting. Start in biodegradable pots or direct sow April. White flowers open ONLY at night — hand-pollinate at dusk with a brush.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Very vigorous — can climb 15–20 feet, covers entire arch and then some. Fruit dries ON the vine into hard shells. Purple martins love these as birdhouses — Louisiana tradition!</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Corn, beans, nasturtiums</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, potatoes</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Poor germination: seed coat not softened — always soak 24 hrs + nick. No fruit set: hand-pollinate at dusk only. Mold on drying gourds: wipe with dilute bleach, dry in sun.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🥒</span>
+    <div class="seed-top-right">
+      <div class="seed-name">ITALIAN STRIPED ZUCCHINI</div>
+      <div class="seed-latin">Cucurbita pepo</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Mar–Apr, Aug–Sept</span>
+        <span class="stag tag-linen">50–55 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow in-ground BESIDE beds — not inside, it spreads 3–4 ft. Plant 2 seeds, thin to 1. More heat-tolerant than standard zucchini — better suited for New Orleans.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Better flavor than standard zucchini — nuttier, firmer. Harvest at 6–8 inches. Male flowers (no tiny zucchini behind) can be harvested and stuffed or fried. Hand-pollinate female flowers.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Beans, corn, nasturtiums, marigolds, dill</div>
+    <div class="comp-row comp-no">✕ avoid: Fennel, potatoes, brassicas</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Blossom end rot: incomplete pollination — hand-pollinate every female flower. Squash vine borer: most common killer in NOLA — sawdust at stem base, inject Bt, bury stem to re-root.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌿</span>
+    <div class="seed-top-right">
+      <div class="seed-name">BORAGE</div>
+      <div class="seed-latin">Borago officinalis</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Feb–Apr, Sept–Oct</span>
+        <span class="stag tag-linen">50–60 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">ALWAYS direct sow — taproot resents transplanting. Fall-sown borage often overwinters in New Orleans. Plant among tomatoes — repels hornworm and attracts pollinators.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Blue star-shaped flowers are edible — freeze in ice cubes for cocktails! Dynamic accumulator: leaves rich in minerals for compost tea. Bees swarm it.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Tomatoes, squash, strawberries</div>
+    <div class="comp-row comp-no">✕ avoid: None — universal companion</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Aphid magnet: this is intended — it acts as a trap crop keeping aphids off tomatoes. Sprawling: stake with one cane. Not flowering: needs more sun.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌺</span>
+    <div class="seed-top-right">
+      <div class="seed-name">BEE BALM</div>
+      <div class="seed-latin">Monarda didyma/fistulosa</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Jan–Feb</span>
+        <span class="stag tag-linen">Blooms yr 2</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">COLD STRATIFY FIRST: damp paper towel in fridge 2 weeks before sowing. Then surface sow in greenhouse — needs light to germinate. 10–40 days germination (slow — be patient!).</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Native Louisiana wildflower. Perennial — comes back bigger every year. Hummingbirds and bumblebees intensely attracted. Leaves make a lovely tea. Perfect under your pecan tree.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Tomatoes, peppers, eggplant</div>
+    <div class="comp-row comp-no">✕ avoid: None known</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Powdery mildew: very common — choose M. fistulosa (more resistant), improve airflow. Slow first year: completely normal. Spreading aggressively: divide clumps in spring.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌿</span>
+    <div class="seed-top-right">
+      <div class="seed-name">SPEARMINT</div>
+      <div class="seed-latin">Mentha spicata</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Jan–Feb</span>
+        <span class="stag tag-linen">Year-round</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">CONTAIN IN A POT — invasive! Mint spreads aggressively by underground runners and will take over beds within one season if planted freely. Start from seed or root a cutting in water (roots in 1 week).</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Classic culinary mint — mojitos, juleps, tea, cooking. Thrives in partial shade under your pecan. Deters aphids and spider mites from nearby plants through aromatic oils.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Tomatoes, peppers, brassicas</div>
+    <div class="comp-row comp-no">✕ avoid: Plant in container — never in ground</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Taking over everything: back in container immediately. Rust spots (orange pustules): mint rust fungus — pull and bag, never compost. Root rot: too wet — needs drainage.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌸</span>
+    <div class="seed-top-right">
+      <div class="seed-name">MAMMOTH BASIL</div>
+      <div class="seed-latin">Ocimum basilicum</div>
+      <div class="seed-tags">
+        <span class="stag tag-purple">GREENHOUSE</span>
+        <span class="stag tag-linen">Feb–Mar</span>
+        <span class="stag tag-linen">60–75 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start greenhouse February–March, 6–8 weeks before outdoor transplant. Sow on surface, barely cover. Pinch seedlings early for bushy growth. 4–5 inch leaves spectacular for whole-leaf Caprese.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Pinch flower buds THE MOMENT they appear — once it flowers leaves become bitter. Succession start new pot every 6–8 weeks April through September for continuous supply.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Tomatoes, peppers, asparagus</div>
+    <div class="comp-row comp-no">✕ avoid: Sage, common rue</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Black spots on leaves: overhead watering — water soil level only. Bitter flavor: flowers not pinched — cut plant back by half, new growth will be sweet.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🌸</span>
+    <div class="seed-top-right">
+      <div class="seed-name">PINK SWISS CHARD</div>
+      <div class="seed-latin">Beta vulgaris</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Sept–Mar</span>
+        <span class="stag tag-linen">50–60 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow or start indoors. Each seed is a cluster of 2–3 seeds — thin to 1 plant per spot, 6–8 inches apart. Cut outer leaves only; never harvest more than 1/3 at once.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Hot pink stems with glossy dark green leaves — genuinely ornamental. More heat-tolerant than lettuce or spinach. Use pink stems in floral arrangements! Nearly year-round harvest potential.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Beans, onions, brassicas, lettuce</div>
+    <div class="comp-row comp-no">✕ avoid: None significant</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Bolting: heat — harvest everything, resow September. Leaf miners (white trails): very common, remove affected leaves. Slugs after rain: crushed eggshells around base.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">💙</span>
+    <div class="seed-top-right">
+      <div class="seed-name">BACHELOR BUTTONS</div>
+      <div class="seed-latin">Centaurea cyanus</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Oct–Jan</span>
+        <span class="stag tag-linen">60–90 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Direct sow ONLY outdoors October–January — needs cool temps to germinate. Just scatter seeds and rake in lightly. Do NOT start indoors. Self-seeds freely, returning each cool season.</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Electric blue, pink, white, purple. Edible flowers. Blooms February–April. Attracts beneficial insects in late winter when pollinators need food most. Deadhead to prolong blooming.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Tomatoes, squash, carrots</div>
+    <div class="comp-row comp-no">✕ avoid: None</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">No germination: soil too warm — must be below 65°F. Aphids on buds: blast with water, bees arrive to eat them. Stops blooming: heat — let go to seed for next year.</div>
+  </div>
+</div>
+<div class="seed-card">
+  <div class="seed-top">
+    <span class="seed-emoji">🥒</span>
+    <div class="seed-top-right">
+      <div class="seed-name">ASHLEY CUCUMBER</div>
+      <div class="seed-latin">Cucumis sativus</div>
+      <div class="seed-tags">
+        <span class="stag tag-green">DIRECT SOW</span>
+        <span class="stag tag-linen">Late Jan / March</span>
+        <span class="stag tag-linen">65 days</span>
+      </div>
+    </div>
+  </div>
+  <div class="seed-divider"></div>
+  <div class="seed-section">
+    <div class="seed-label">HOW TO START</div>
+    <div class="seed-text">Start in greenhouse late January in biodegradable pots for March transplant, OR direct sow March when soil warms. Plant pot and all. Train immediately onto arch with loose ties. Already proven in your garden!</div>
+  </div>
+  <div class="seed-section">
+    <div class="seed-label">GROWING NOTES</div>
+    <div class="seed-text">Developed at Clemson University specifically for the hot, humid Southeast. Pick at 6–7 inches DAILY — unharvested fruits signal DONE to the plant and slow production. Check inside arch.</div>
+  </div>
+  <div class="seed-companions">
+    <div class="seed-label">COMPANIONS</div>
+    <div class="comp-row comp-yes">✦ Dill, borage, nasturtiums, radishes</div>
+    <div class="comp-row comp-no">✕ avoid: Sage, strong herbs</div>
+  </div>
+  <div class="seed-trouble">
+    <div class="seed-label">TROUBLESHOOT</div>
+    <div class="seed-text">Bitter fruit: inconsistent watering — #1 cause. Slow production: unharvested fruits. More disease-resistant than Boston Pickling — better choice if you experience disease pressure.</div>
+  </div>
+</div>
+  </div>
+</section>
+
+<section id="trees" class="section">
+  <div class="section-eyebrow">PERMANENT PLANTS</div>
+  <h2 class="section-title">TREES, FRUIT &amp; PERENNIAL FOOD PLANTS</h2>
+  <div class="section-rule"></div>
+  <div class="callout callout-tip"><div class="callout-icon-box">🍑</div><div><div class="callout-title">DO NOT JUDGE RIPENESS BY COLOR ALONE</div><div class="callout-body">— LSU light varieties can be ripe while still quite green. Look for ALL of these signs together: fruit droops downward on stem · soft to gentle squeeze · skin begins to wrinkle slightly · neck/stem withers and bends · tiny drop of nectar at eye (bottom) · pulls off with gentle upward twist. Check ev</div></div></div><div class="cards-grid"><div class="card"><div class="card-icon">🌰</div><div class="card-title">PECAN TREE</div><div class="card-body">Native Louisiana keystone species. Hosts 200+ native insect species. Leaf litter high in zinc, phosphorus, potassium — add to compost tea. Harvest October–December. Shells = slow-release mulch. Mild j</div></div><div class="card"><div class="card-icon">🍌</div><div class="card-title">BANANA GROVE</div><div class="card-body">Creates humid microclimate, west windbreak. Dead leaves and pseudostems = extraordinary high-potassium compost material. Chop and drop dead pseudostems as mulch around beds. Plant turmeric and ginger </div></div><div class="card"><div class="card-icon">🍑</div><div class="card-title">LSU FIG (GOLD OR O&#x27;ROURKE)</div><div class="card-body">Grows at base of pecan. Light-colored variety, likely LSU Gold or O&#x27;Rourke — legendary honey-sweet eating figs. Two crops: breba June–July (current), main August–October. Harvest when fruit droops, ne</div></div></div><div class="tw"><table><thead><tr><th>Plant</th><th>Why Here</th><th>Bonus</th></tr></thead><tbody><tr><td>Turmeric</td><td>Loves dappled shade, moist humid conditions — evolved with bananas</td><td>Harvest fresh turmeric rhizomes fall</td></tr><tr><td>Ginger</td><td>Same conditions as turmeric, grows wild in Louisiana</td><td>Fresh ginger all year; add leaves to compost tea</td></tr><tr><td>Taro (Colocasia)</td><td>Grows wild in NOLA, edible corms, enormous tropical leaves</td><td>Edible corms; ornamental</td></tr><tr><td>Perilla / Shiso</td><td>Self-seeds under trees, handles humidity beautifully</td><td>Edible, pest deterrent</td></tr></tbody></table></div>
+</section>
+<section id="shed-bed" class="section">
+  <div class="section-eyebrow">PERENNIAL BORDER</div>
+  <h2 class="section-title">SHED BED — WHAT&#x27;S GROWING</h2>
+  <div class="section-rule"></div>
+  <p class="prose">Brick-edged perennial border beside the shed. Features coral vine on the fence, established perennials, and the ongoing battle with cat&#x27;s claw vine. A low-maintenance pollinator and sensory garden that feeds beneficial insects which support the vegetable beds nearby.</p><div class="callout callout-tip"><div class="callout-icon-box">🔴</div><div><div class="callout-title">CAT&#X27;S CLAW VINE BATTLE PLAN</div><div class="callout-body">Macfadyena unguis-cati is one of the most invasive vines in Louisiana. This week: cut ALL vines at the base — do NOT compost (bag and trash, they re-root). Dig out underground tubers (look like small potatoes) — these are the real enemy. Spray any regrowth immediately with vinegar + salt + dish soap</div></div></div><div class="cards-grid"><div class="card"><div class="card-icon">🌸</div><div class="card-title">CORAL VINE</div><div class="card-body">Antigonon leptopus — native to Mexico, perennial in 9b. Heart-shaped leaves, cascading pink flowers. Your ally against cat&#x27;s claw — it will eventually outcompete it for fence space if you keep cutting</div></div><div class="card"><div class="card-icon">💜</div><div class="card-title">VICTORIAN BLUE SALVIA</div><div class="card-body">Perennial in 9b. Blooms spring through frost. Hummingbird and butterfly magnet. Cut back by half after each flush of bloom to encourage repeat flowering. One of the best low-maintenance pollinators fo</div></div><div class="card"><div class="card-icon">💜</div><div class="card-title">TRADESCANTIA ZEBRINA</div><div class="card-body">Formerly &quot;Wandering Jew&quot; — now correctly called Tradescantia or Spiderwort. Deep purple with silver striping. Essentially indestructible in your climate. Excellent groundcover. Edible. Good compost ma</div></div><div class="card"><div class="card-icon">🌸</div><div class="card-title">LANTANA (2 COLORS)</div><div class="card-body">Perennial in 9b — butterfly magnet, especially monarchs and swallowtails. Virtually indestructible in Louisiana summer heat. Cut back hard in late winter to keep tidy. Berries are toxic to children an</div></div><div class="card"><div class="card-icon">💙</div><div class="card-title">BLUE ASTER</div><div class="card-body">Currently potted — plan to put in ground. Late summer/fall bloomer when pollinators need it most. Plant in the sunniest spot of the bed. Divide every 2–3 years to keep vigorous. One of the last plants</div></div><div class="card"><div class="card-icon">🌿</div><div class="card-title">ALOE VERA</div><div class="card-body">Will get very large in 9b left in ground. Practical household plant — keep accessible for burns and skin (especially useful with kids). Will produce pups you can divide and pot as gifts. Can stay in b</div></div><div class="card"><div class="card-icon">🌾</div><div class="card-title">BLUE FESCUE GRASS</div><div class="card-body">Beautiful steel-blue ornamental grass. Currently has mystery weed growing through center — remove carefully by tracing stem to root and pulling. Grasses are very hard to weed once something establishe</div></div><div class="card"><div class="card-icon">🌸</div><div class="card-title">EASTER LILIES</div><div class="card-body">Naturalized in your bed — they re-bloom in summer in 9b (not Easter, since forcing gets reset to natural cycle). Will multiply into larger clumps each year. After bloom: don&#x27;t cut stems until fully ye</div></div><div class="card"><div class="card-icon">💜</div><div class="card-title">WILD PETUNIA (RUELLIA)</div><div class="card-body">Ruellia caroliniensis — spontaneous native volunteer in your bed. Lavender trumpet flowers, blooms nearly continuously spring through frost. Natural nematode suppressor in soil. Gulf Fritillary butter</div></div><div class="card"><div class="card-icon">🌺</div><div class="card-title">JEWELS OF OPAR (8 READY)</div><div class="card-body">Talinum paniculatum — airy magenta flower sprays, 18–24 inches tall. Self-seeds prolifically in New Orleans — you&#x27;ll have dozens of volunteers next year. Plant between lantana. More shade tolerant tha</div></div></div><div class="tw"><table><thead><tr><th>Plant</th><th>Why</th></tr></thead><tbody><tr><td>Society Garlic (Tulbaghia violacea)</td><td>Perennial in 9b, lavender flowers nearly year-round, garlic scent deters pests, zero maintenance. Fi</td></tr><tr><td>Rosemary (already have!)</td><td>Perennial shrub in 9b. Let it grow large — it becomes a substantial specimen. Flowers feed early spr</td></tr></tbody></table></div>
+</section>
+<section id="fertilizer" class="section">
+  <div class="section-eyebrow">SOIL &amp; FEEDING</div>
+  <h2 class="section-title">FERTILIZER, COMPOST TEA &amp; SOIL HEALTH</h2>
+  <div class="section-rule"></div>
+  <p class="prose">Your pecan tree has been building a mycorrhizal fungal network in your soil for years. Your raised beds are likely tapping into it. To protect and strengthen it: never use fungicides anywhere in the yard. Add mycorrhizal inoculant to transplant holes. Your no-dig, living mulch philosophy is already perfect. Plant native species around the tree base (goldenrod, spiderwort, wild bergamot) to strengthen the network.</p><div class="callout callout-tip"><div class="callout-icon-box">🪣</div><div><div class="callout-title">YOUR WEED COMPOST TEA BUCKET</div><div class="callout-body">Already brilliant — free, hyperlocal fertilizer perfectly tuned to your soil. Always dilute to the color of weak iced tea before applying. Apply to moist (not dry) soil, early morning. Every 7–10 days during growing season.</div></div></div><div class="callout callout-tip"><div class="callout-icon-box">🌿</div><div><div class="callout-title">COMFREY (SYMPHYTUM OFFICINALE)</div><div class="callout-body">— Plant 1–2 in a corner of your yard. Perennial in 9b, comes back bigger every year. Harvest leaves 4–5 times per season. Makes the most potent homemade fertilizer tea of anything you can grow — extremely high in potassium and phosphorus. Known as &quot;liquid gold.&quot; The one plant that could replace ever</div></div></div><div class="tw"><table><thead><tr><th>Ingredient</th><th>Nutrients</th><th>Effect</th><th>How to Use</th></tr></thead><tbody><tr><td>Banana peels</td><td>High potassium + phosphorus</td><td>Triggers flowering</td><td>Throw straight in bucket, riper = better</td></tr><tr><td>Yarrow cuttings</td><td>Deep-mined calcium, potassium, phosphorus</td><td>Activates whole tea</td><td>Harvest from your existing plant, add to bucket</td></tr><tr><td>Eggshells</td><td>Calcium</td><td>Prevents blossom end rot on tomatoes/peppers</td><td>Crush and add to bucket</td></tr><tr><td>Pecan leaves</td><td>Zinc, phosphorus, potassium, tannins</td><td>Zinc boosts tomato + pepper production</td><td>Add fallen leaves from your own tree</td></tr><tr><td>Banana leaves (from your grove)</td><td>Extremely high potassium</td><td>Bloom booster</td><td>Chop dead leaves and steep in bucket</td></tr><tr><td>Fig leaves</td><td>High potassium</td><td>Bloom and fruit support</td><td>Add to bucket when pruning fig</td></tr><tr><td>Wood ash</td><td>Potassium, raises pH</td><td>Helps flowering</td><td>Small handful only — don&#x27;t overdo</td></tr></tbody></table></div><div class="tw"><table><thead><tr><th>Weed</th><th>Nutrients Added</th><th>Notes</th></tr></thead><tbody><tr><td>Dandelion</td><td>Potassium, calcium, iron</td><td>One of the best — deep taproot miner</td></tr><tr><td>Clover</td><td>Nitrogen, phosphorus</td><td>Excellent — fixes nitrogen from air</td></tr><tr><td>Chickweed</td><td>Potassium, phosphorus</td><td>Also edible in salads</td></tr><tr><td>Broadleaf plantain</td><td>Calcium, silica</td><td>Silica strengthens plant cell walls</td></tr><tr><td>Purslane</td><td>Phosphorus, magnesium</td><td>Edible and nutritious — also eat it!</td></tr><tr><td>Wild Ruellia (your volunteer!)</td><td>Various minerals</td><td>Trim and add to bucket</td></tr></tbody></table></div>
+</section>
+<section id="natives" class="section">
+  <div class="section-eyebrow">ECOSYSTEM BUILDING</div>
+  <h2 class="section-title">NATIVE PLANTS — RECOMMENDED FOR YOUR YARD</h2>
+  <div class="section-rule"></div>
+  <p class="prose">Native plants evolved with your exact soil, rainfall, humidity and insects over thousands of years. They require less water, fewer inputs, and actively build the ecosystem that makes your whole garden more productive.</p><div class="cards-grid"><div class="card"><div class="card-icon">🌿</div><div class="card-title">WILD BLUE INDIGO (BAPTISIA)</div><div class="card-body">Deep taproot breaks compacted soil, fixes nitrogen, drought tolerant once established. Perennial — comes back bigger each year. Stunning blue flowers in spring.</div></div><div class="card"><div class="card-icon">🌼</div><div class="card-title">BLACK-EYED SUSAN (RUDBECKIA)</div><div class="card-body">Native Louisiana wildflower, blooms when pollinators need it most in summer heat, self-seeds prolifically. Perfect low-maintenance addition.</div></div><div class="card"><div class="card-icon">💜</div><div class="card-title">IRONWEED (VERNONIA)</div><div class="card-body">Deep purple flowers in late summer. Deep taproot breaks compacted clay, mines minerals. Monarch butterfly magnet. Leaves excellent for compost tea.</div></div><div class="card"><div class="card-icon">🌸</div><div class="card-title">CARDINAL FLOWER (LOBELIA)</div><div class="card-body">Loves moist spots. Hummingbirds are obsessed with it. Native to Louisiana wetlands — handles summer rain events without rotting. Brilliant red spikes.</div></div><div class="card"><div class="card-icon">🌺</div><div class="card-title">EASTERN REDBUD</div><div class="card-body">Small native tree, fixes nitrogen, edible flowers in salads, provides dappled shade moderating soil temperature. Stunning spring bloom.</div></div><div class="card"><div class="card-icon">🫐</div><div class="card-title">AMERICAN BEAUTYBERRY</div><div class="card-body">Louisiana native shrub. Crushed leaves repel mosquitoes and deer (research-backed). Stunning purple berries in fall. Birds love it. Perfect for the yard&#x27;s edges.</div></div><div class="card"><div class="card-icon">🌿</div><div class="card-title">WILD BERGAMOT (MONARDA)</div><div class="card-body">Native to Louisiana, deep roots mine calcium and magnesium. Leaves make tea for humans. Attracts hummingbirds and native bees constantly.</div></div><div class="card"><div class="card-icon">🦋</div><div class="card-title">PAWPAW (ASIMINA TRILOBA)</div><div class="card-body">Louisiana native understory tree. Loves growing under pecans. Produces tropical-tasting edible fruit. Host plant for Zebra Swallowtail butterfly. Rare and exciting.</div></div></div><div class="tw"><table><thead><tr><th>Plant</th><th>Why First</th><th>Where to Plant</th></tr></thead><tbody><tr><td>Native Passionflower (Passiflora incarnata)</td><td>Arch vine + butterflies + edible passion fruit. Gulf Fritillary + Zebra Longwing host plant. Vigorou</td><td>Base of arch when not in use</td></tr><tr><td>Partridge Pea</td><td>Fast nitrogen fixer this season, yellow flowers attract native bees, self-seeds</td><td>Between beds, sunny border</td></tr><tr><td>Goldenrod (Solidago)</td><td>Late summer pollinator boost for fall crops, mineral accumulator, bees go wild for it</td><td>Sunny border, around bed edges</td></tr><tr><td>Swamp Milkweed (Asclepias incarnata)</td><td>Monarch host plant, thrives in Louisiana humidity, beautiful pink flowers all summer</td><td>Sunny spot, border bed</td></tr><tr><td>Sensitive Plant (Mimosa strigillosa)</td><td>Low-growing nitrogen-fixing native groundcover. NOT the invasive tree — stays flat. Perfect living m</td><td>Ground between and around beds</td></tr><tr><td>Spiderwort (Tradescantia ohiensis)</td><td>Early spring pollinator food, spreads to fill gaps, handles pecan shade</td><td>Under pecan tree edge</td></tr></tbody></table></div>
+</section>
+<section id="weeds" class="section">
+  <div class="section-eyebrow">PLANT IDENTIFICATION</div>
+  <h2 class="section-title">WEEDS &amp; VOLUNTEERS — KEEP OR PULL?</h2>
+  <div class="section-rule"></div>
+  <div class="callout callout-tip"><div class="callout-icon-box">👃</div><div><div class="callout-title">FASTEST ID METHOD: THE SMELL TEST</div><div class="callout-body">Crush a leaf and smell it. Lemon/citrus = lemon balm (keep). Strong mint = wild mint (keep). Herbal/catnip = catnip (keep). No real smell = likely chamber bitter or caesar weed (pull or use for tea). Milky sap = spurge (pull and wash hands).</div></div></div><div class="tw"><table><thead><tr><th>Plant</th><th>ID Clues</th><th>Decision</th><th>Use</th></tr></thead><tbody><tr><td>Wild Ruellia (your volunteer!)</td><td>Lavender trumpet flower, toothed hairy leaves, upright stem</td><td>KEEP</td><td>Leave in place, let self-seed as border plant. Nematode suppressor.</td></tr><tr><td>Lemon Balm</td><td>Crush leaf — strong lemon smell. Toothed oval leaves, square stem.</td><td>KEEP</td><td>Compost tea, mosquito repellent, edible tea for humans</td></tr><tr><td>Wild Mint</td><td>Strong mint smell when crushed. Square stem, opposite leaves.</td><td>KEEP</td><td>Compost tea, pest repellent, culinary use</td></tr><tr><td>Catnip</td><td>Herbal/catnip smell. Grayish-green slightly fuzzy leaves.</td><td>KEEP</td><td>Repels aphids and mosquitoes</td></tr><tr><td>Purslane</td><td>Thick succulent-looking low stems, small rounded leaves</td><td>KEEP</td><td>Edible and nutritious, excellent compost tea, living mulch</td></tr><tr><td>Chickweed</td><td>Small oval leaves, thin sprawling stems, tiny white flowers</td><td>KEEP</td><td>Edible in salads, excellent compost tea ingredient</td></tr><tr><td>Wood Sorrel</td><td>Clover-like leaves, sometimes heart-shaped leaflets, yellow or white tiny flowers</td><td>KEEP</td><td>Edible, lemony flavor in salads. Compost tea.</td></tr><tr><td>Dollarweed</td><td>Round coin-shaped leaves on center stems, spreads by runners</td><td>Neutral</td><td>Edible but not exciting. Indicates moist soil. Compost ok.</td></tr><tr><td>Chamber Bitter / Caesar Weed</td><td>No notable smell, oval toothed leaves, small and weedy looking</td><td>PULL</td><td>Fine for compost tea bucket but remove from beds</td></tr><tr><td>Nutsedge</td><td>Triangular stem (not round), grass-like, yellow-green. Stems don&#x27;t crush flat.</td><td>PULL IMMEDIATELY</td><td>Very difficult to control once established. Never compost.</td></tr><tr><td>Spurge</td><td>Milky white sap when stem broken. Low, mat-forming.</td><td>PULL</td><td>Bag and trash. Can irritate skin.</td></tr><tr><td>Cat&#x27;s Claw seedlings</td><td>Near fence. Yellow trumpet flowers when mature. Tiny tendrils with claw-shaped tips.</td><td>PULL IMMEDIATELY</td><td>Your mortal enemy. Pull every seedling before it establishes. Never compost.</td></tr></tbody></table></div>
+</section>
+<section id="pests" class="section">
+  <div class="section-eyebrow">PEST &amp; DISEASE</div>
+  <h2 class="section-title">PEST CALENDAR &amp; NATURAL CONTROLS</h2>
+  <div class="section-rule"></div>
+  <div class="cards-grid"><div class="card"><div class="card-icon">🌼</div><div class="card-title">FRENCH DWARF MARIGOLDS</div><div class="card-body"></div></div><div class="card"><div class="card-icon">🌸</div><div class="card-title">NASTURTIUMS</div><div class="card-body"></div></div><div class="card"><div class="card-icon">🌿</div><div class="card-title">CHIVES + BASIL</div><div class="card-body"></div></div><div class="card"><div class="card-icon">🍃</div><div class="card-title">AMERICAN BEAUTYBERRY</div><div class="card-body"></div></div></div><div class="tw"><table><thead><tr><th>Month</th><th>Watch For</th><th>Natural Control</th></tr></thead><tbody><tr><td>Apr–May</td><td>Pecan aphids moving to garden; aphids on tomatoes and peppers</td><td>Strong water spray to knock off; nasturtiums as trap crop; chives nearby deter</td></tr><tr><td>Jun–Jul</td><td>Spider mites (hot dry spells); squash bugs; cucumber beetles</td><td>Increase humidity with mulch; neem oil spray early morning; hand-pick eggs under leaves</td></tr><tr><td>Aug</td><td>Pecan weevil in tree; caterpillars on parsley (let them be — Black Swallowtail!)</td><td>Accept parsley caterpillars — they become butterflies. Hand-pick harmful caterpillars only.</td></tr><tr><td>Sep–Oct</td><td>Squirrels competing for pecan harvest; slugs emerging with fall rains</td><td>Harvest pecans promptly. Crushed eggshells around slug-vulnerable plants.</td></tr><tr><td>Oct–Mar</td><td>Aphids on cool-season crops (kale, snapdragons); slugs in wet weather</td><td>Neem oil; chive companion planting; diatomaceous earth around slugs</td></tr><tr><td>Year-round</td><td>Nematodes in soil (especially near old lawn areas)</td><td>French marigolds planted throughout beds; wild Ruellia — both suppress nematodes naturally</td></tr></tbody></table></div>
+</section>
+<section id="tomatoes" class="section">
+  <div class="section-eyebrow">CROP GUIDE</div>
+  <h2 class="section-title">TOMATOES — TROUBLESHOOTING &amp; VARIETY GUIDE</h2>
+  <div class="section-rule"></div>
+  <div class="callout callout-tip"><div class="callout-icon-box">🌡️</div><div><div class="callout-title">WHY NEW ORLEANS TOMATOES STALL IN SUMMER</div><div class="callout-body">Above 90°F daytime and 75°F nighttime, tomato pollen becomes sterile and fruit cannot ripen (can&#x27;t produce lycopene above 95°F). This is normal. Your real tomato harvest windows are: March–June and September–November. Plants going in April are racing the clock — next year start in December in the gr</div></div></div><div class="tw"><table><thead><tr><th>Variety</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td>Chadwick (heirloom cherry)</td><td>Fruit set but not ripening — normal for June heat above 90°F</td><td>Harvest at first color break, ripen indoors on counter. Cut back 1/3 in late August for fall flush.</td></tr><tr><td>Purple Cherry</td><td>No flowers yet — nitrogen-rich bed + heat stress</td><td>Apply bloom booster (high phosphorus, low nitrogen). Epsom salt spray weekly. Should flower Septembe</td></tr></tbody></table></div><div class="tw"><table><thead><tr><th>Variety</th><th>Type</th><th>Why It Works Here</th></tr></thead><tbody><tr><td>Creole</td><td>Indeterminate</td><td>Louisiana heirloom, bred for heat and humidity. The classic New Orleans tomato.</td></tr><tr><td>Cherokee Purple</td><td>Indeterminate</td><td>Excellent flavor, handles humidity well, beautiful dark color</td></tr><tr><td>Celebrity</td><td>Determinate</td><td>Disease resistant, very reliable producer in Southern climates</td></tr><tr><td>Heatmaster</td><td>Determinate</td><td>Bred specifically for hot climates, sets fruit at higher temps than most varieties</td></tr><tr><td>Ashley Cucumber</td><td>Vine (not tomato)</td><td>Already growing! Bred at Clemson for hot humid Southeast — perfect choice</td></tr></tbody></table></div>
+</section>
+
+<div class="no-results" id="noRes">NOTHING FOUND — TRY ANOTHER SEARCH</div>
+</div>
+
+<footer>
+  <p>Baudier Yarden &nbsp;·&nbsp; 6123 Dauphine St. &nbsp;·&nbsp; Zone 9b &nbsp;·&nbsp; June 2026</p>
+</footer>
+
+<script>
+const input=document.getElementById('qi'),countEl=document.getElementById('qc'),
+      page=document.getElementById('page'),noRes=document.getElementById('noRes');
+function clr(){page.querySelectorAll('mark').forEach(m=>{m.parentNode.replaceChild(document.createTextNode(m.textContent),m);m.parentNode.normalize();});}
+function hl(n,t){if(n.nodeType===3){const i=n.textContent.toLowerCase().indexOf(t);if(i<0)return;const m=document.createElement('mark');m.textContent=n.textContent.slice(i,i+t.length);const a=n.splitText(i);a.textContent=a.textContent.slice(t.length);n.parentNode.insertBefore(m,a);}else if(n.nodeType===1&&!['SCRIPT','STYLE','MARK'].includes(n.tagName)){[...n.childNodes].forEach(c=>hl(c,t));}}
+function search(){clr();const t=input.value.trim().toLowerCase();const ss=page.querySelectorAll('.section');if(!t){ss.forEach(s=>s.classList.remove('search-hidden'));countEl.textContent='';noRes.style.display='none';return;}let n=0;ss.forEach(s=>{if(s.textContent.toLowerCase().includes(t)){s.classList.remove('search-hidden');hl(s,t);n++;}else s.classList.add('search-hidden');});countEl.textContent=n+' section'+(n!==1?'s':'');noRes.style.display=n===0?'block':'none';}
+input.addEventListener('input',search);
+document.querySelectorAll('.nav-link').forEach(a=>a.addEventListener('click',ev=>{ev.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t){input.value='';search();setTimeout(()=>t.scrollIntoView({behavior:'smooth',block:'start'}),50);}}));
+</script>
+</body>
+</html>
