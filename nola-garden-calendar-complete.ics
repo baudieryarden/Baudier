@@ -1,0 +1,1170 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//New Orleans Garden Zone 9b//Full Garden Calendar 2026-2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:🌿 My NOLA Garden - Complete Schedule
+X-WR-CALDESC:Complete planting schedule for New Orleans Zone 9b - 26 seed varieties\, raised beds\, arch trellis\, pecan\, fig\, banana grove. All seeds and recommended plants included.
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VEVENT
+UID:1@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:🌿 Succession sow Zinnias + Celosias
+DESCRIPTION:Last summer succession sow of heat-loving cut flowers.\nDirect sow in left bed.\nKeep succession going every 3-4 weeks through summer.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:2@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:🌱 Start cool-season transplants in greenhouse
+DESCRIPTION:Start in greenhouse for October outdoor planting:\n- Snapdragons\n- Stock\n- Pansies\n- Lisianthus\n- Kale and broccoli\nThese need 6-8 weeks before transplanting.
+CATEGORIES:SEEDS,GREENHOUSE
+END:VEVENT
+BEGIN:VEVENT
+UID:3@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥬 Direct sow Slobolt Lettuce (first fall succession)
+DESCRIPTION:Surface sow - lettuce needs light to germinate, barely cover.\nSuccession sow every 3 weeks through March.\nCut-and-come-again harvest: take outer leaves only.\nSlobolt resists bolting 2-3 weeks longer than regular lettuce.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:4@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥕 Direct sow Purple Carrot
+DESCRIPTION:Direct sow only - carrots hate transplanting.\nSow thinly, cover with 1/4 inch fine vermiculite.\nCRITICAL: Keep surface moist every day for 2-3 weeks until germination (14-21 days).\nCover with burlap to retain moisture. Thin to 2-3 inches apart.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:5@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:💙 Direct sow Borage (fall)
+DESCRIPTION:Direct sow only - taproot resents transplanting.\nFall-sown borage often overwinters in New Orleans.\nPlant among tomatoes - repels hornworm, attracts pollinators.\nBlue flowers edible - freeze in ice cubes for cocktails!
+CATEGORIES:SEEDS,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:6@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:💙 Direct sow Bachelor Buttons
+DESCRIPTION:Direct sow only - needs cool soil temps to germinate.\nScatter in left bed and along borders.\nSelf-seeds freely once established - you may never resow.\nEdible flowers. Blooms February-April alongside sweet peas.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:7@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🎃 Watch for Cinderella Pumpkin harvest readiness
+DESCRIPTION:Pumpkins should be approaching maturity now.\nHarvest when: fully orange, stem is corked and dried, skin resists fingernail.\nDo not harvest early - they will not continue ripening off the vine.\nCure in dry spot 1-2 weeks for longest storage.
+CATEGORIES:HARVEST,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:8@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:🥜 Harvest Virginia Peanuts
+DESCRIPTION:Harvest when leaves begin to yellow.\nPull entire plant, shake off soil.\nCure upside down in dry ventilated spot (greenhouse with doors open works) for 2-4 weeks before eating.\nBoil some green (fresh) for boiled peanuts - Louisiana tradition!
+CATEGORIES:HARVEST,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:9@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261231
+SUMMARY:✂️ Harvest snapdragons and stock regularly
+DESCRIPTION:Snapdragons and stock should be blooming now.\nHarvest stems frequently - the more you cut the more they bloom.\nCut to just above a leaf node with 2 sets of leaves below.\nBring indoors for beautiful winter arrangements.
+CATEGORIES:HARVEST,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:10@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:🥬 Succession sow lettuce (3rd)
+DESCRIPTION:Third succession of lettuce for continuous harvest.\nAlso sow: spinach, cilantro, more dill.\nJanuary-February is your peak lettuce quality window - cool temps, no bolt pressure.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:11@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:🌿 Start Bee Balm: cold stratify this week
+DESCRIPTION:Cold stratify bee balm seeds now for February sowing:\nPlace seeds in damp paper towel, seal in bag, put in fridge.\nLeave 2 weeks minimum.\nThen sow indoors in greenhouse - surface sow, needs light.\nSlow first year; year 2 it explodes with hummingbird activity.
+CATEGORIES:SEEDS,GREENHOUSE,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:12@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🌱 Direct sow Borage (spring)
+DESCRIPTION:Direct sow borage in and around tomato areas.\nSpring sowing for April-May flowers that support tomato pollination.\nRemember: direct sow only, taproot resents transplanting.
+CATEGORIES:SEEDS,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:13@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🍅 Transplant indeterminate tomatoes to arch trellis
+DESCRIPTION:Transplant Chocolate Stripes and Matt's Wild Cherry to arch trellis bases.\nLeft side of arch: indeterminate tomatoes.\nBury stem deep. Begin tying to arch weekly.\nPinch suckers on indeterminate varieties weekly.\nReal harvest begins April-June.
+CATEGORIES:TRANSPLANT,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:14@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌸 Dahlias go in - permanent in 9b!
+DESCRIPTION:Plant dahlia tubers in left bed.\nDahlias stay in the ground year-round in Zone 9b - no digging needed!\nThey will come back bigger every year.\nPlace in south-facing area of left bed for maximum sun.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:15@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:🍉 Start watermelons in greenhouse (optional early start)
+DESCRIPTION:Optional: start Cal-Sweet and Dixie Queen watermelons in biodegradable pots.\nFor April outdoor transplant.\nOR wait and direct sow in April - both methods work.\nDirect vine out of bed onto lawn when planting.
+CATEGORIES:SEEDS,GREENHOUSE,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:16@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:🌸 Transplant zinnias, celosias, sunflowers outdoors
+DESCRIPTION:Move greenhouse-started heat-loving flowers to left bed.\nZinnias: succession sow every 3-4 weeks through June.\nCelosias: dramatic texture in arrangements.\nSunflowers: back of left bed, north end (tallest).
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:17@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:🍉 Direct sow watermelons outdoors
+DESCRIPTION:Direct sow Cal-Sweet and Dixie Queen when soil is consistently warm.\nPlant 3 seeds per hill, thin to 2 strongest.\nSpace hills 6-8 ft apart.\nDirect vines OUT of beds onto lawn.\nHarvest July-August.
+CATEGORIES:SEEDS,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:18@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:🥜 Direct sow Virginia Peanuts
+DESCRIPTION:Plant raw (NOT roasted) shelled peanuts 2 inches deep, 6 inches apart.\nSoil must be 65F+.\nDo NOT fertilize with nitrogen.\nDo NOT disturb soil once pegging begins.\nHarvest when leaves yellow in September.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:19@nola-garden
+DTSTAMP:20260628T153500Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270531
+SUMMARY:🌶️ Harvest peppers heavily
+DESCRIPTION:Year-2 pepper plants are producing heavily now.\nJimmy Nardello: harvest red for sweetest, best frying flavor.\nJalapeño: harvest green for heat, or let ripen red then smoke over pecan wood.\nSweet Banana: harvest yellow-green through red.\nPickle surplus banana peppers.
+CATEGORIES:HARVEST,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:20@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260726
+SUMMARY:🎃 SOWING: Cinderella Pumpkin at arch base
+DESCRIPTION:Sow 2-3 seeds 1 inch deep at the base of BOTH arch sides. Thin to 1 strongest vine per side.\nTrain vine onto arch immediately - it grows fast.\n100-110 days to maturity = October-November harvest.\nMake pantyhose slings when fruit reaches tennis-ball size!\nFeed weekly with compost tea once fruits set.\nFLESH IS CULINARY GRADE - extraordinary for soup and pie.
+CATEGORIES:SEEDS,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:21@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260726
+SUMMARY:🥒 SOWING: Delicata Squash at arch base
+DESCRIPTION:Sow alongside Cinderella pumpkin on opposite arch side.\n80-100 days to maturity. Small fruit (1-2 lbs) - no slings needed unlike Cinderella.\nCream skin with green stripes - edible skin\, no peeling required.\nTrain up arch and harvest October-November.\nStores for months at room temperature.
+CATEGORIES:SEEDS,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:22@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260726
+SUMMARY:🌱 SOWING: Soybeans / Edamame (summer)
+DESCRIPTION:Direct sow in right bed alongside existing crops.\nNitrogen fixers - free soil improvement.\nHarvest when pods are plump and bright green.\nAfter harvest: chop plants and dig into bed - all fixed nitrogen stays in soil.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:23@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260726
+SUMMARY:🌿 SOWING: Malabar Spinach at decorative trellis
+DESCRIPTION:Direct sow at base of decorative trellis in right bed.\nHeat-loving edible green that LOVES to climb.\nBeautiful glossy leaves - harvests all summer when nothing else grows.\nPerfect living trellis plant for the hot months.\nTreat like spinach in cooking.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:24@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🌺 SOWING: Okra (summer heat crop)
+DESCRIPTION:Direct sow okra seeds in a sunny spot.\nOne of the best heat-lovers for New Orleans.\nHarvest pods at 3-4 inches - every 2 days once producing.\nLeave some pods to dry for seed saving.\nOkra flowers are also edible and beautiful.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:25@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🫘 SOWING: Southern Peas / Black-Eyed Peas
+DESCRIPTION:Direct sow Southern peas in any available bed space.\nThrives in brutal summer heat - bred for it.\nNitrogen fixer - double benefit.\nHarvest green for fresh eating or let dry for dried peas.\nThe classic Louisiana summer legume.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:26@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🌸 PLANT NOW: Jewels of Opar (8 plants ready!)
+DESCRIPTION:You have 8 Jewels of Opar (Talinum paniculatum) ready to go in ground NOW.\nPlant between lantana in shed bed.\nAiry magenta flower sprays on 18-24 inch stems.\nSelf-seeds prolifically - you'll have dozens of volunteers next year.\nMore shade tolerant than most plants in that bed.\nAdd trimmings to compost tea bucket.
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:27@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🍠 PLANT NOW: Sweet Potato Slips
+DESCRIPTION:Plant sweet potato slips immediately - they need the longest runway before fall.\nBest living mulch for summer - spreads fast\, covers bare soil.\nPlant at the base of taller plants in BOTH beds.\nLet vines carpet the bed - harvest tubers in October-November.\nVines also edible as cooked greens.
+CATEGORIES:TRANSPLANT,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:28@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:💐 PLANT NOW: Nasturtiums (trap crop)
+DESCRIPTION:Direct sow nasturtiums throughout both beds.\nAphid trap crop - aphids prefer nasturtiums over your tomatoes and peppers.\nFlowers AND leaves fully edible - peppery flavor.\nTrails beautifully as living mulch between plants.\nPlant near tomatoes for best pest protection.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:29@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:💐 PLANT NOW: Dwarf French Marigolds everywhere
+DESCRIPTION:Transplant or direct sow dwarf French marigolds throughout BOTH beds.\nNematode deterrent in soil - scientifically documented.\nPest-repelling terpenes above ground.\nPlace one next to every tomato\, pepper\, and cucumber.\nBloom all summer with zero maintenance.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:30@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🌿 PLANT NOW: Purslane as living mulch
+DESCRIPTION:Direct sow purslane to fill bare soil areas in both beds.\nGerminates in DAYS in summer heat.\nThick succulent leaves hold moisture and cool roots.\nEdible and nutritious (high in omega-3s!).\nSelf-maintains - essentially zero effort.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:31@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:💐 PLANT NOW: Gomphrena (globe amaranth)
+DESCRIPTION:Direct sow or transplant gomphrena in both beds and border.\nOne of the most heat-tolerant flowers in existence.\nBlooms all summer in New Orleans without complaint.\nExcellent cut flower - papery blooms dry beautifully.\nPerfect gap filler for the rest of summer.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:32@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:☀️ MAINTENANCE: July heat protocol
+DESCRIPTION:JULY CHECKLIST:\n- Mulch all beds 3-4 inches deep\n- Water deeply 2-3x per week early morning\n- Add 30-40% shade cloth over new seedlings if temps exceed 95F\n- Apply Epsom salt foliar spray (1 tbsp/gallon) to tomatoes and peppers\n- Check drip irrigation for clogs\n- Harvest cucumbers EVERY DAY\n- Add banana peels and pecan leaves to compost tea bucket
+CATEGORIES:MAINTENANCE
+END:VEVENT
+BEGIN:VEVENT
+UID:33@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:🎃 MAINTENANCE: Make fruit slings for pumpkins/squash
+DESCRIPTION:CHECK ARCH NOW: any Cinderella or Delicata fruit reaching tennis-ball size?\nIf yes - make slings IMMEDIATELY:\n- Cut leg from old pantyhose or use mesh produce bag\n- Slip under fruit\n- Tie both ends securely to arch panel\n- Check weekly and adjust as fruit grows\nDo NOT wait - fruit weight will snap stem without support!
+CATEGORIES:MAINTENANCE,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:34@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260731
+SUMMARY:🥒 HARVEST: Cucumbers daily through July
+DESCRIPTION:DAILY HARVEST TASK:\nAshley: pick at 6-7 inches\nBoston Pickling: pick at 3-4 inches\nCheck INSIDE the arch tunnel - fruits hide up there!\nHarvest every single day - unharvested fruits signal DONE to the plant and slow production dramatically.\nVines will start winding down in August.
+CATEGORIES:HARVEST,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:35@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:🥬 GREENHOUSE: Start All Seasons Cabbage
+DESCRIPTION:Start in greenhouse cell trays.\nThin to 1 per cell at first true leaf.\nTransplant outdoors in October at 18 inch spacing.\n75-95 days to maturity = January-March harvest.\nWatch for cabbage loopers - check leaf undersides weekly.\nHeavy feeder - amend transplant bed with compost.
+CATEGORIES:SEEDS,GREENHOUSE,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:36@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:🌸 GREENHOUSE: Start Snapdragons + Stock + Lisianthus
+DESCRIPTION:Start in greenhouse for October outdoor transplant:\n- Snapdragons: bloom fall through spring\n- Stock: extraordinary fragrance\, beautiful cut flower\n- Lisianthus: beloved by florists\, does well in 9b when started in fall\nAll need 6-8 weeks before transplanting.\nYour greenhouse gives you a major head start on the fall flower season.
+CATEGORIES:SEEDS,GREENHOUSE,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:37@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:🌸 GREENHOUSE: Start Pansies + Dianthus + Alyssum
+DESCRIPTION:Start in greenhouse for October transplant:\n- Pansies: cool-season color Nov-April\n- Dianthus: spicy fragrance\, excellent cut flower\n- Alyssum: low-growing\, honey scent\, perfect bed edging\nAll go into left bed in October for winter-spring bloom.
+CATEGORIES:SEEDS,GREENHOUSE,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:38@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:🌻 GREENHOUSE: Start Sunflowers (last summer succession)
+DESCRIPTION:Start last succession of sunflowers in greenhouse or direct sow.\nPlace at north end of left bed (tallest - won't shade other plants).\nHarvest when outer petals begin to droop back.\nLeave some heads on the plant for birds after cutting season.\nBirds will thank you all winter.
+CATEGORIES:SEEDS,GREENHOUSE,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:39@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:🍅 MAINTENANCE: Cut tomatoes back 1/3 for fall flush
+DESCRIPTION:IMPORTANT: Prune ALL tomato plants back by 1/3 now.\n- Chadwick cherry tomato\n- Purple cherry tomato\nThis pushes vigorous new growth for the Sept-Nov fall harvest window.\nFeed with banana peel tea and compost tea after pruning.\nYour REAL tomato season begins again in September!\nAlso: apply bloom booster (high phosphorus) to purple cherry.
+CATEGORIES:MAINTENANCE,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:40@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:🌱 SOWING: Zinnias + Celosias (last summer succession)
+DESCRIPTION:Last summer succession of heat-loving cut flowers.\nDirect sow in left bed.\nSuccession every 3-4 weeks through June has kept the bed productive.\nThese carry the flower garden through summer heat.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:41@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🌽 SOWING: Ambrosia Sweet Corn - 4x4 block
+DESCRIPTION:Plant ENTIRE right bed in 4x4 block (16 plants) at 10-12 inch spacing.\nCorn is wind-pollinated - MUST be a block not rows for good ear fill.\nHand-pollinate by shaking tassels over silks each morning.\nHarvest November. \nEarworm tip: drop mineral oil on silk tips when silks first emerge.\nChoose shorter variety (Honey Select or Trinity) if available.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:42@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥒 SOWING: Ashley Cucumber (fall crop)
+DESCRIPTION:Second cucumber season! Direct sow at arch base right side.\nTrain immediately onto arch trellis.\n65 days to maturity = harvest October-November.\nAshley: pick at 6-7 inches. Daily harvest once producing.\nMore disease-resistant than Boston Pickling - good choice for fall.
+CATEGORIES:SEEDS,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:43@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥒 SOWING: Boston Pickling Cucumber (fall crop)
+DESCRIPTION:Direct sow alongside Ashley at arch base.\n55-65 days to maturity = harvest October-November.\nPick at 3-4 inches for pickling.\nPair with fall-sown bouquet dill for fresh pickles.
+CATEGORIES:SEEDS,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:44@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥬 SOWING: Slobolt Lettuce (fall succession 1)
+DESCRIPTION:Surface sow - lettuce needs light to germinate - barely cover.\nSuccession sow every 3 weeks through March for continuous harvest.\nCut-and-come-again: harvest outer leaves only.\nSlobolt resists bolting 2-3 extra weeks vs regular lettuce.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:45@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥕 SOWING: Purple Carrot
+DESCRIPTION:Direct sow ONLY - carrots hate transplanting.\nSow thinly\, cover with 1/4 inch fine vermiculite.\nCRITICAL: Keep surface moist EVERY DAY for 2-3 weeks until germination.\nCover with damp burlap to retain moisture - check daily.\nThin to 2-3 inches apart once seedlings reach 2 inches.\nPurple color intensifies with cool temps - October-February harvest is best.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:46@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🌈 SOWING: Pink Swiss Chard
+DESCRIPTION:Direct sow or start indoors. Each seed is a cluster - thin to 1 per spot.\nHarvest outer leaves continuously - never more than 1/3 at once.\nPink stems are beautiful in floral arrangements!\nNearly year-round harvest potential in New Orleans.\nSauté with garlic and Creole seasoning - classic Louisiana side.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:47@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥬 SOWING: Kale (fall)
+DESCRIPTION:Direct sow or start indoors for October transplant.\nKale is one of the most productive cool-season crops for New Orleans.\nHarvest outer leaves continuously November-April.\nFrost sweetens kale - your best harvests after a cold snap.\nMassage raw leaves with olive oil for salads.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:48@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🥬 SOWING: Spinach (fall)
+DESCRIPTION:Direct sow in partial shade area of beds.\nGerminates best when soil is below 70F.\nHarvest baby leaves from 3 weeks; full leaves from 6 weeks.\nBolts quickly - succession sow every 3 weeks.\nMore cold-hardy than lettuce.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:49@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🫚 SOWING: Beets (fall)
+DESCRIPTION:Direct sow beet seeds 1/2 inch deep\, 2 inches apart.\nEach seed is actually a cluster - thin to 1 seedling.\nHarvest greens at any size (delicious!). Harvest roots when golf-ball sized.\nBoth tops and roots are edible - zero waste crop.\nGolden and Chioggia varieties especially beautiful.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:50@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🌱 SOWING: Radishes (under corn and everywhere)
+DESCRIPTION:Direct sow radishes as a fast intercrop under the corn.\nHarvest in just 25-30 days - in and out before corn needs the space.\nAlso sow along edges of all beds.\nSuccession sow every 2 weeks through March.\nFrench Breakfast radishes especially excellent.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:51@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🌿 SOWING: Bouquet Dill (fall)
+DESCRIPTION:Direct sow only - taproot resents transplanting.\nScatter thinly\, cover lightly.\nPairs with fall cucumber harvest for fresh pickles.\nSelf-seeds once established - may never need to resow.\nBlack Swallowtail caterpillars eat it - a gift! Resow immediately.
+CATEGORIES:SEEDS,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:52@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:💙 SOWING: Borage (fall)
+DESCRIPTION:Direct sow only - taproot resents transplanting.\nFall-sown borage often overwinters in New Orleans.\nPlant among tomatoes - repels hornworm\, attracts pollinators.\nBlue flowers edible - freeze in ice cubes for cocktails!
+CATEGORIES:SEEDS,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:53@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🫘 SOWING: Cannellini Beans (fall)
+DESCRIPTION:Direct sow for fall harvest.\nNitrogen fixer - improves soil for everything nearby.\nHarvest dried for pantry or pull while still green for fresh beans.\nAfter harvest: chop plants and dig in - nitrogen stays in soil.\nRotate location from summer planting.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:54@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🫘 SOWING: Pole Beans (fall)
+DESCRIPTION:Direct sow at arch base or along trellis after cucumbers wind down.\nFast grower - 60-65 days to harvest.\nNitrogen fixer.\nHarvest every 2 days once pods begin - pick while young and tender.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:55@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🌸 TRANSPLANT: Snapdragons + Stock + Lisianthus to left bed
+DESCRIPTION:Move greenhouse-started cool-season flowers to left bed.\nPrime fall planting window!\nSnapdragons and stock will bloom fall through spring.\nLisianthus: plant in sunniest spot of bed\, good drainage.\nHarvest stems frequently - the more you cut the more they bloom!
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:56@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🌸 TRANSPLANT: Pansies + Dianthus + Alyssum to bed edges
+DESCRIPTION:Transplant cool-season flowers to front (south) edges of left bed.\nPansies: plant in partial shade areas near existing perennials.\nDianthus: excellent cut flower with spicy fragrance.\nAlyssum: low-growing edging\, honey-scented\, edible flowers.\nAll will bloom through April.
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:57@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:🌸 SOWING: Sweet Peas at BOTH arch bases
+DESCRIPTION:Plant sweet pea seeds at the base of both sides of the arch.\nThey need the LONG cool season to bloom - Oct planting = Jan-April blooms.\nCover seeds 1 inch deep.\nBoth sides will climb and MEET AT THE TOP by February.\nFragrance is extraordinary. Enjoy before heat arrives April.\nLet some pods dry for seed saving.
+CATEGORIES:SEEDS,FLOWER,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:58@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:💙 SOWING: Bachelor Buttons (Cornflower)
+DESCRIPTION:Direct sow ONLY - needs cool soil temps to germinate.\nScatter in left bed and along borders.\nSow alongside larkspur and poppies - they all bloom together Feb-April.\nSelf-seeds freely - naturalize over time.\nEdible flowers. Electric blue color extraordinary.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:59@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:💐 SOWING: Larkspur (tall cool-season flower)
+DESCRIPTION:Direct sow larkspur seeds outdoors now - needs cool temps to germinate.\nDo NOT cover deeply - surface sow or barely cover.\nWill bloom February-April alongside bachelor buttons and sweet peas.\nExcellent tall cut flower - plant at north end of left bed.\nSelf-seeds freely once established.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:60@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🌸 SOWING: Poppies (Breadseed / California)
+DESCRIPTION:Scatter poppy seeds over any open soil areas - they need cool temps to germinate.\nDo not cover - press seeds into surface only.\nLight frost actually helps germination.\nBloom March-April in gorgeous waves of color.\nLet seed heads dry for spectacular arrangements and future seed saving.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:61@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:🥬 TRANSPLANT: Cabbage + Kale + Broccoli outdoors
+DESCRIPTION:Move greenhouse-started brassicas to right bed after corn harvest preparation.\nCabbage: 18 inch spacing.\nKale: 12-18 inch spacing.\nBroccoli: 18 inch spacing.\nAmend bed with compost.\nWatch for cabbage loopers on all brassicas - check undersides of leaves.
+CATEGORIES:TRANSPLANT,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:62@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261031
+SUMMARY:🌽 DAILY TASK: Hand-pollinate corn
+DESCRIPTION:DAILY morning task while corn is tasseling:\nShake tassels gently over silks to transfer pollen.\nIn a small block this manual step is essential for full ear development.\nMorning is best - pollen is freshest.\nHarvest ready when: silks brown and dried + kernels release milky juice.
+CATEGORIES:MAINTENANCE,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:63@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🎃 HARVEST CHECK: Cinderella + Delicata Pumpkins
+DESCRIPTION:Check pumpkins and squash on arch:\nCinderella ripe when: fully orange + stem corked and dried + skin resists fingernail scratch.\nDelicata ripe when: fully cream/tan + stem drying + feels heavy for its size.\nDo NOT harvest early - they will NOT continue ripening off the vine.\nCure in dry spot 1-2 weeks for longest storage.
+CATEGORIES:HARVEST,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:64@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261031
+SUMMARY:🍑 HARVEST: LSU Fig main crop peak
+DESCRIPTION:LSU Gold/O'Rourke main crop peaks August-October.\nCheck tree EVERY MORNING - figs ripen in 2-3 days and birds compete.\nRIPE SIGNS: fruit droops downward on stem + soft to gentle squeeze + neck withers + tiny nectar drop at eye + pulls off with gentle upward twist.\nDo NOT judge by color alone - LSU light varieties ripe while still greenish.\nEat fresh or dry in greenhouse on hot days.
+CATEGORIES:HARVEST,TREE
+END:VEVENT
+BEGIN:VEVENT
+UID:65@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261015
+SUMMARY:🌰 HARVEST: Pecan season begins
+DESCRIPTION:Pecans begin dropping October through December.\nHarvest promptly after they fall - squirrels are watching.\nCure in single layer in dry spot 2-3 weeks before eating.\nShells: add to compost tea as slow-release zinc + potassium supplement.\nShell mulch is excellent around beds - beautiful and functional.\nLeaf litter: add to compost tea bucket.
+CATEGORIES:HARVEST,TREE
+END:VEVENT
+BEGIN:VEVENT
+UID:66@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🌿 PLANT: Society Garlic in shed bed
+DESCRIPTION:Plant Society Garlic (Tulbaghia violacea) to fill remaining bare spots in shed bed.\nProduces lavender flowers almost YEAR ROUND in 9b.\nGarlic-scented foliage deters pests naturally.\nCompletely drought tolerant once established.\nZero maintenance. Perennial. One of the best plants for New Orleans.
+CATEGORIES:TRANSPLANT,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:67@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:🍠 HARVEST: Sweet potato vines + tubers
+DESCRIPTION:Sweet potato tubers planted in July are ready to harvest now.\nDig carefully - tubers spread widely.\nCure in warm (80F) dry spot for 10-14 days before eating - dramatically improves sweetness.\nLeaves and young shoots also edible - cook like spinach.\nSave some tubers as slips for next July planting.
+CATEGORIES:HARVEST,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:68@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:🌽 HARVEST: Ambrosia Sweet Corn
+DESCRIPTION:Harvest when: silks are brown and dried + kernels release milky juice when punctured.\nEat or preserve WITHIN HOURS - sweetness fades fast even in supersweet varieties.\nPull stalks after harvest. Chop and compost or till into bed.\nAmend bed with 2-3 inches compost after stalks are out.
+CATEGORIES:HARVEST,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:69@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:🥜 HARVEST: Virginia Peanuts
+DESCRIPTION:Harvest when leaves begin to yellow.\nPull entire plant - shake off soil.\nCure UPSIDE DOWN in dry ventilated spot (greenhouse with doors open is perfect) for 2-4 weeks.\nDo NOT eat before curing - flavor is dramatically better after.\nBoil some while fresh-pulled (green stage) for traditional Louisiana boiled peanuts!
+CATEGORIES:HARVEST,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:70@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261130
+SUMMARY:🌰 HARVEST: Peak pecan collection
+DESCRIPTION:November = peak pecan drop. Collect daily - squirrels are fast.\nStore cured pecans in cool dry place up to 1 year or freeze indefinitely.\nNote: your pecan tree hosts 200+ native insect species - the biodiversity superhighway of your whole yard.\nShells to compost tea. Leaves to compost tea (high zinc).
+CATEGORIES:HARVEST,TREE
+END:VEVENT
+BEGIN:VEVENT
+UID:71@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:🌿 MAINTENANCE: Amend beds after corn harvest
+DESCRIPTION:After pulling corn stalks:\n- Add 2-3 inches compost to right bed\n- Top dress left bed as well  \n- Add pecan leaf litter to compost tea bucket\n- Collect fallen banana leaves for compost tea (high potassium)\n- Chop dead banana pseudostems as mulch around beds\n- Plant lettuce\, spinach\, carrot succession in right bed now
+CATEGORIES:MAINTENANCE
+END:VEVENT
+BEGIN:VEVENT
+UID:72@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:🥬 SOWING: Slobolt Lettuce (succession 2)
+DESCRIPTION:Second succession of lettuce for continuous harvest.\nAlso sow: spinach\, more dill\, more radishes.\nPlant in right bed now that corn is harvested.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:73@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261130
+SUMMARY:✂️ HARVEST: Snapdragons + Stock blooming
+DESCRIPTION:Snapdragons and stock should be blooming now.\nHarvest stems frequently - the more you cut the more they bloom.\nCut to just above a leaf node leaving 2 sets of leaves below the cut.\nStock fragrance is extraordinary indoors in November.
+CATEGORIES:HARVEST,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:74@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:🍅 GREENHOUSE: Start Chocolate Stripes Tomato
+DESCRIPTION:Start in greenhouse December for February transplant.\nSow in small cells at 70-75F.\nTransplant up to 4 inch pots at first true leaf.\nBury stem DEEP when transplanting outdoors - tomatoes root along buried stem.\nDecember start = February transplant = April-June harvest BEFORE heat.\nHeirloom 8-12 oz fruit - dark red/brown with green stripes. Never refrigerate.
+CATEGORIES:SEEDS,GREENHOUSE,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:75@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:🍅 GREENHOUSE: Start Matt's Wild Cherry Tomato
+DESCRIPTION:Start alongside Chocolate Stripes in greenhouse.\nMatt's Wild is extremely vigorous - may outgrow other seedlings. Give it its own pot early.\nMost heat-tolerant tomato in your collection - ancestrally from hot Mexico.\nProduces hundreds of tiny intensely-flavored fruits.\nMay keep producing through July when others stop in summer heat.
+CATEGORIES:SEEDS,GREENHOUSE,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:76@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:🌶️ GREENHOUSE: Start ALL Peppers on heat mat
+DESCRIPTION:Start ALL peppers in greenhouse on heat mat at 80-85F MINIMUM:\n- Jimmy Nardello (sweet Italian - 0 Scoville)\n- Jalapeño (smoke red ones with your pecan wood!)\n- Sweet Banana Pepper (excellent for pickling)\n14-21 days germination. PEPPERS ARE PERENNIAL IN 9b.\nCut existing peppers back in February - they regrow BIGGER in year 2.\nIf existing peppers are still alive: do NOT start new ones.
+CATEGORIES:SEEDS,GREENHOUSE,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:77@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:🥬 SOWING: Succession Lettuce + Dill + Chard (Dec)
+DESCRIPTION:Continue succession sowing cool-season crops:\n- Slobolt lettuce (succession 3)\n- Bouquet dill\n- Pink Swiss chard\n- Spinach\nDecember-February is peak cool-season growing in New Orleans.\nYour best harvests of the year happen now.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:78@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261231
+SUMMARY:✂️ HARVEST: Snapdragons + Stock peak
+DESCRIPTION:December is often peak snapdragon and stock bloom month.\nHarvest EVERY 2-3 DAYS to keep production going.\nCut to leaf node with 2 sets of leaves below.\nThese are prime cut flowers for holiday arrangements.
+CATEGORIES:HARVEST,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:79@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270131
+SUMMARY:🌸 Sweet Peas climbing - first blooms on arch!
+DESCRIPTION:Sweet peas should be climbing both arch sides and may show first blooms.\nFragrance is extraordinary - enjoy now.\nCut regularly to encourage more blooms.\nThey will peak February-March then fade with heat in April.\nSave some pods drying on vine for next October sowing.
+CATEGORIES:HARVEST,FLOWER,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:80@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:🌿 PREP: Cold stratify Bee Balm seeds
+DESCRIPTION:Cold stratify bee balm seeds for February sowing:\nPlace seeds in damp paper towel.\nSeal in small bag.\nPut in refrigerator for 2 WEEKS minimum.\nThis mimics winter and triggers germination signal.\nThen sow indoors in greenhouse - surface sow\, needs light.\nSlow first year; in year 2 it attracts hummingbirds constantly.
+CATEGORIES:SEEDS,GREENHOUSE,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:81@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:🥬 SOWING: Slobolt Lettuce (succession 4)
+DESCRIPTION:Fourth succession of lettuce.\nAlso sow: spinach\, cilantro\, more dill.\nJanuary-February is peak lettuce quality - cool temps\, no bolt pressure.\nYour best lettuce of the year!
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:82@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270131
+SUMMARY:🫘 HARVEST: Cannellini Beans + Pole Beans
+DESCRIPTION:Fall-sown beans should be producing now.\nCannellini: harvest dried or pull while still green.\nPole beans: pick every 2 days - young and tender.\nAfter harvest: chop plants into bed. All fixed nitrogen stays in soil.
+CATEGORIES:HARVEST,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:83@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270131
+SUMMARY:🥕 HARVEST: Purple Carrots
+DESCRIPTION:Purple carrots sown in September should be ready now.\nPull a test carrot to check size.\nHarvest when shoulder diameter is 3/4 inch or larger.\nPurple color is deepest and flavor sweetest after cool December nights.\nLeave in ground as needed - they store well in the bed.
+CATEGORIES:HARVEST,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:84@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🌿 GREENHOUSE: Start Mammoth Basil
+DESCRIPTION:Start basil 6-8 weeks before outdoor transplant.\nSow on surface barely covered. Germinates in 7-10 days at 70F+.\nPinch seedlings early for bushy growth.\n4-5 inch leaves - spectacular for whole-leaf Caprese salads.\nSuccession start new pot every 6-8 weeks April through September.
+CATEGORIES:SEEDS,GREENHOUSE,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:85@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🌿 GREENHOUSE: Start Bee Balm from stratified seeds
+DESCRIPTION:Remove bee balm seeds from refrigerator (cold-stratified for 2 weeks).\nSurface sow in greenhouse - needs light to germinate.\n10-40 days germination (slow - be patient!).\nFirst year growth is modest. Year 2 it explodes.\nFinal location: beside vegetable beds as permanent pollinator station.\nHummingbirds and bumblebees will arrive constantly once established.
+CATEGORIES:SEEDS,GREENHOUSE,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:86@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🌿 GREENHOUSE: Start Spearmint (or root cuttings)
+DESCRIPTION:Option 1: Start from seed in greenhouse - surface sow at 65F+.\nOption 2 (easier): Root a cutting in a glass of water - roots in 1 week.\nCRITICAL: Plant in a LARGE CONTAINER ONLY - never directly in beds.\nMint spreads aggressively by underground runners and will take over beds in one season.\nSunk containers beside beds allow pest-deterrent aroma without root invasion.\nMint juleps and mosquito deterrence are your rewards!
+CATEGORIES:SEEDS,GREENHOUSE,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:87@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:✂️ MAINTENANCE: Cut back ALL perennial peppers
+DESCRIPTION:After last frost risk (mid-February in New Orleans) - CUT BACK ALL PEPPERS:\n- Jimmy Nardello: cut by 2/3\n- Jalapeño: cut by 2/3\n- Sweet Banana Pepper: cut by 2/3\n- Big Bertha: cut by 2/3\nLeave main woody stems. They will rebound into BIGGER more productive year-2 plants.\nThis is the single most important February task for your garden.\nFeed with compost tea after cutting.
+CATEGORIES:MAINTENANCE,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:88@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:🍅 TRANSPLANT: Determinate tomatoes outdoors
+DESCRIPTION:After last frost (mid-February):\nTransplant any determinate tomatoes (Celebrity\, Heatmaster) to beds.\nBury stem deep - tomatoes root along buried stem.\nCage or stake at bed edges immediately.\nBegin Epsom salt foliar spray (1 tbsp/gallon) bi-weekly.
+CATEGORIES:TRANSPLANT,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:89@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270228
+SUMMARY:🌸 Sweet Peas PEAK BLOOM on arch
+DESCRIPTION:February is peak sweet pea month on your arch!\nBoth sides of arch should be fully covered and meeting at top.\nCut stems for bouquets every 2-3 days.\nFragrance is extraordinary indoors in February.\nEnjoy now - they fade when temps hit 80F consistently in April.
+CATEGORIES:HARVEST,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:90@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🌱 SOWING: Borage (spring)
+DESCRIPTION:Direct sow borage in and around tomato planting areas.\nSpring sowing for April-May flowers that support tomato pollination.\nDirect sow only - taproot resents transplanting.
+CATEGORIES:SEEDS,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:91@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🥬 SOWING: Slobolt Lettuce (succession 5)
+DESCRIPTION:Continue succession every 3 weeks through March.\nAlso sow: spinach\, cilantro\, more dill\, more radishes.\nThis is your last cool-season window before spring heat arrives.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:92@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🌻 GREENHOUSE: Start Sunflowers + Zinnias for spring
+DESCRIPTION:Start in greenhouse for March/April transplant:\n- Sunflowers: start 4 weeks before outdoor transplant\n- Zinnias: start 6 weeks before\nFirst spring succession of both.\nSuccession sow zinnias every 3-4 weeks through June.
+CATEGORIES:SEEDS,GREENHOUSE,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:93@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🍅 TRANSPLANT: Chocolate Stripes + Matt's Wild Cherry to arch
+DESCRIPTION:Transplant indeterminate tomatoes to arch trellis bases:\n- Left arch base: Chocolate Stripes\n- Right arch base (or near): Matt's Wild Cherry\nBury stem deep. Begin tying to arch weekly.\nPinch suckers on Chocolate Stripes weekly.\nReal harvest begins April-June.
+CATEGORIES:TRANSPLANT,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:94@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌶️ TRANSPLANT: Jimmy Nardello + Jalapeño + Sweet Banana outdoors
+DESCRIPTION:Transplant new pepper seedlings (or confirm cut-back perennials regrowing):\n- Place in sunniest part of left bed\n- Consistent watering - no drought stress\n- Apply Epsom salt spray bi-weekly\n- Side dress with compost once established\nYear-2 perennial peppers will be dramatically more productive!
+CATEGORIES:TRANSPLANT,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:95@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🥒 GREENHOUSE: Start Ashley + Boston Pickling Cucumbers
+DESCRIPTION:Start in biodegradable pots for late March/April transplant.\nPlant pot and all to minimize root disturbance.\nOR direct sow outdoors late March when soil warms.\nRight side of arch: cucumbers claim this spot March-June.
+CATEGORIES:SEEDS,GREENHOUSE,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:96@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🎶 GREENHOUSE: Start Birdhouse Gourd
+DESCRIPTION:SOAK SEEDS 24 HOURS first - hard seed coat must be softened.\nNick seed coat with nail file before soaking.\nStart in biodegradable pots - 3-4 weeks before outdoor transplant.\nVery vigorous - will cover entire arch (15-20 ft of vine!).\nFlowers open ONLY at night - hand-pollinate at dusk with small brush.\nPurple martins love these as birdhouses - Louisiana tradition!
+CATEGORIES:SEEDS,GREENHOUSE,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:97@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌻 TRANSPLANT: Sunflowers + Zinnias outdoors
+DESCRIPTION:Move greenhouse-started sunflowers and zinnias to left bed.\nSunflowers: north end of bed only (tallest - will shade shorter plants if south).\nZinnias: mid-bed. Succession sow more every 3-4 weeks through June.\nDahlias go in now too - tubers stay in ground year-round in 9b!
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:98@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌱 PLANT: Comfrey in corner of yard
+DESCRIPTION:Plant 1-2 comfrey plants in a permanent corner location.\nComfrey is perennial and comes back BIGGER every year.\nHarvest leaves 4-5 times per season for compost tea.\nThe most potent homemade fertilizer plant you can grow - extremely high potassium and phosphorus.\nKnown as liquid gold. One plant could eventually replace all store-bought fertilizer.
+CATEGORIES:TRANSPLANT,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:99@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🦋 PLANT: Native Passionflower at arch base (off-season vine)
+DESCRIPTION:Plant native passionflower (Passiflora incarnata) at arch base.\nVigorously climbs the arch during the gap between sweet peas and summer vines.\nEdible passion fruit production.\nHost plant for Gulf Fritillary AND Zebra Longwing butterflies - you will have butterflies constantly.\nPerennial - comes back every year.\nOne of the highest-impact plants you can add to your yard.
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:100@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌼 PLANT: Partridge Pea (native nitrogen fixer)
+DESCRIPTION:Direct sow Partridge Pea between and around beds.\nFast-growing native annual nitrogen fixer.\nYellow flowers attract native bees all summer.\nSelf-seeds - returns every year.\nOne of the best plants to support your vegetable garden ecosystem.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:101@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌼 PLANT: Goldenrod in sunny border
+DESCRIPTION:Plant native goldenrod (Solidago) in the sunny border area.\nLate summer bloomer - feeds pollinators when little else blooms.\nMineral accumulator - leaves excellent for compost tea.\nBees absolutely swarm it in August-September.\nPerfectly timed to boost pollination for fall tomato flush.
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:102@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🦋 PLANT: Swamp Milkweed for monarchs
+DESCRIPTION:Plant Swamp Milkweed (Asclepias incarnata) in a sunny spot.\nMonarch butterfly host plant - monarchs pass through New Orleans on migration!\nThrives in Louisiana humidity unlike common milkweed.\nBeautiful pink flowers all summer.\nLeaves are a monarch caterpillar food source - if caterpillars appear: celebrate!
+CATEGORIES:TRANSPLANT,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:103@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌱 SOWING: Arikara Yellow Bush Beans (spring)
+DESCRIPTION:Direct sow 1-1.5 inches deep\, 4-6 inches apart.\nWait until soil is 60F+ (safe by March in NOLA).\nInoculate seeds with rhizobium for maximum nitrogen fixation.\nHarvest pods young every 2 days.\nFall planting (August) often outperforms spring.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:104@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🫘 SOWING: Soybeans + Edamame (spring)
+DESCRIPTION:Direct sow in any available bed space.\nNitrogen fixer - free soil improvement.\nHarvest green pods for edamame when plump and bright.\nAfter harvest: chop and dig in.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:105@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:🥒 TRANSPLANT: Cucumbers to right arch
+DESCRIPTION:Transplant greenhouse-started cucumbers to right arch base.\nPlant biodegradable pot and all.\nTrain immediately with loose ties every 6 inches.\nAshley: harvest at 6-7 inches. Boston Pickling: 3-4 inches.\nHarvest EVERY DAY - production slows dramatically with unharvested fruit.
+CATEGORIES:TRANSPLANT,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:106@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌸 PLANT: Creeping Thyme as living mulch
+DESCRIPTION:Plant creeping thyme along bed edges and in gaps.\nStays flat - perfect ground cover.\nHandles heat well. Smells amazing. Pest deterrent. Edible.\nPerennial in 9b - gets better every year.\nOne of the best permanent living mulch plants for your raised beds.
+CATEGORIES:TRANSPLANT,HERB
+END:VEVENT
+BEGIN:VEVENT
+UID:107@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌴 PLANT: Turmeric rhizomes in banana grove
+DESCRIPTION:Plant turmeric rhizomes at the base of banana plants.\n10-15 rhizomes tucked around banana base.\nThey evolved together in tropical Asia - perfect companions.\nDappled shade from banana canopy is IDEAL for turmeric.\nHarvest fresh turmeric rhizomes October-November.\nYou may never need to buy turmeric again.
+CATEGORIES:TRANSPLANT,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:108@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌴 PLANT: Ginger rhizomes in banana grove
+DESCRIPTION:Plant ginger rhizomes alongside turmeric at banana base.\nSame conditions - same companion planting logic.\nBreak supermarket ginger into sections for free planting material (organic only).\nHarvest young ginger from June onward. Full rhizomes in November.\nFresh ginger tea\, cooking\, and compost tea additions year-round.
+CATEGORIES:TRANSPLANT,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:109@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌴 PLANT: Taro in banana grove / moist areas
+DESCRIPTION:Plant taro (Colocasia) at banana base or any consistently moist area.\nGrows wild in Louisiana - it is perfectly adapted.\nEnormous ornamental leaves. Edible corms harvest in fall.\nThrives in exactly the dappled shade + moisture the banana grove provides.\nCompletes the tropical food forest understory planting.
+CATEGORIES:TRANSPLANT,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:110@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🌽 SOWING: Ambrosia Corn (spring crop)
+DESCRIPTION:Spring corn: sow for May-June harvest.\nPlant in 4x4 block in right bed (or adjust if bed is occupied).\nHand-pollinate daily when tasseling.\nEat within hours of harvest - sweetness fades fast.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:111@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:🍉 SOWING: Cal-Sweet + Dixie Queen Watermelons
+DESCRIPTION:Direct sow both watermelon varieties when soil consistently warm.\nCal-Sweet: 3 seeds per hill\, thin to 1-2 strongest. 80-90 days.\nDixie Queen: 3 seeds per hill\, thin to 2. 85 days.\nSpace hills 6-8 feet apart.\nDirect vines OUT of raised beds onto lawn - they need 6-8 ft of sprawl.\nDo NOT grow adjacent if saving seeds (may cross-pollinate).
+CATEGORIES:SEEDS,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:112@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:🥜 SOWING: Virginia Peanuts
+DESCRIPTION:Plant RAW (not roasted!) shelled peanuts 2 inches deep\, 6 inches apart.\nSoil must be 65F+ (safe in April in NOLA).\nDo NOT fertilize with nitrogen - peanuts make their own.\nDo NOT disturb soil once flowering begins and pegs form.\nHarvest when leaves yellow in September-October.
+CATEGORIES:SEEDS,VEGETABLE
+END:VEVENT
+BEGIN:VEVENT
+UID:113@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:🌱 SOWING: Italian Striped Zucchini (spring)
+DESCRIPTION:Direct sow in-ground BESIDE beds - not inside (it spreads 3-4 ft per plant).\nPlant 2 seeds\, thin to 1 strongest.\nHarvest at 6-8 inches for best flavor - never let it get huge.\nHand-pollinate female flowers (tiny zucchini behind) with a brush.\nMale flowers can be harvested and stuffed or fried.
+CATEGORIES:SEEDS,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:114@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270430
+SUMMARY:🍅 HARVEST: Tomatoes - peak spring window begins
+DESCRIPTION:April begins your prime spring tomato harvest.\nChocolate Stripes: harvest at first color change - ripen on counter. 8-12 oz.\nMatt's Wild Cherry: pick continuously - tiny\, intense\, addictive.\nNever refrigerate any tomato - room temperature only.\nShake plants daily or use electric toothbrush on stems for pollination.
+CATEGORIES:HARVEST,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:115@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:🌶️ MAINTENANCE: Pull sweet peas as heat arrives
+DESCRIPTION:Sweet peas cannot survive when temps consistently exceed 80F.\nWhen leaves yellow and bloom slows - pull vines from arch.\nLet some pods dry first for seed saving.\nRemove from arch to make room for summer climbers.\nArch is now ready for summer vine rotation.
+CATEGORIES:MAINTENANCE,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:116@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270430
+SUMMARY:🥒 HARVEST: Cucumber peak + pickle making
+DESCRIPTION:April-May: cucumber harvest in full swing!\nAshley + Boston Pickling both producing heavily.\nPair with fresh bouquet dill for refrigerator pickles.\nHarvest EVERY DAY without exception.\nCheck inside arch tunnel - they hide up there!
+CATEGORIES:HARVEST,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:117@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:💐 SOWING: Nasturtiums (spring)
+DESCRIPTION:Direct sow nasturtiums throughout both beds.\nAphid trap crop - aphids prefer nasturtiums over vegetables.\nFlowers AND leaves edible.\nTrails as living mulch between summer plants.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:118@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270531
+SUMMARY:🍅 HARVEST: Tomato peak season
+DESCRIPTION:May is prime tomato month in New Orleans!\nChocolate Stripes: 8-12 oz per fruit - extraordinary flavor.\nMatt's Wild Cherry: harvest continuously\, hundreds of tiny fruits.\nHarvest at color break and ripen indoors.\nNever refrigerate. Eat at room temperature for best flavor.\nFreeze surplus whole for winter sauces.
+CATEGORIES:HARVEST,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:119@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270531
+SUMMARY:🌶️ HARVEST: Peppers heavily
+DESCRIPTION:Year-2 pepper plants are dramatically more productive.\nJimmy Nardello: harvest red for sweetest frying flavor.\nJalapeño: harvest green for heat or let ripen red then smoke over pecan wood.\nSweet Banana: harvest yellow-green through red. Pickle the surplus.\nBig Bertha: harvest at full size - these are LARGE bell peppers.
+CATEGORIES:HARVEST,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:120@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:🌻 SOWING: Zinnias + Sunflowers (succession 2)
+DESCRIPTION:Second spring succession of zinnias and sunflowers.\nDirect sow or start in greenhouse and transplant.\nSuccession sow zinnias every 3-4 weeks through June for continuous cut flowers.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:121@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:🎃 PREP: Amend arch base for July pumpkin sowing
+DESCRIPTION:Prepare arch bases for late July pumpkin sowing:\n- Add 3-4 inches compost to planting areas at arch base\n- Ensure drip irrigation reaches arch base\n- Stock up on pantyhose or mesh bags for fruit slings\n- Check arch for any repairs before heavy vine load\n- Pull any spent cucumber vines from arch
+CATEGORIES:MAINTENANCE,VINE
+END:VEVENT
+BEGIN:VEVENT
+UID:122@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270630
+SUMMARY:🍑 HARVEST: LSU Fig breba (first) crop
+DESCRIPTION:Fig breba crop: June-July on LAST YEAR'S wood.\nCheck tree EVERY MORNING once fruits begin softening.\nRIPE SIGNS: droops downward + soft to squeeze + neck withers + tiny nectar at eye + pulls off with gentle twist.\nDo NOT judge by color - LSU light varieties ripe while still greenish!\nCheck daily - birds compete fiercely.
+CATEGORIES:HARVEST,TREE
+END:VEVENT
+BEGIN:VEVENT
+UID:123@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:🍅 MAINTENANCE: Pull or cut back tomatoes for summer
+DESCRIPTION:Mid-June: heat above 90F stops fruit set on most tomatoes.\nOption 1: Cut back by 1/3 and keep alive for September fall flush.\nOption 2: Pull determinate types\, compost\, replace with summer crops.\nALWAYS keep Matt's Wild Cherry - most heat-tolerant.\nFeed cut-back plants with compost tea to support recovery.
+CATEGORIES:MAINTENANCE,FRUIT
+END:VEVENT
+BEGIN:VEVENT
+UID:124@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:🌸 SOWING: Zinnias + Celosias (summer)
+DESCRIPTION:Summer succession of heat-loving cut flowers.\nDirect sow in left bed.\nSuccession every 3-4 weeks through July.\nThese are your summer workhorses when cool-season flowers are done.
+CATEGORIES:SEEDS,FLOWER
+END:VEVENT
+BEGIN:VEVENT
+UID:125@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🪣 MONTHLY: Apply compost tea to all beds
+DESCRIPTION:Apply every 7-10 days throughout growing season.\nAlways dilute to color of WEAK ICED TEA before applying.\nApply to MOIST (not dry) soil\, early morning only.\nAdd to bucket monthly: banana peels + yarrow cuttings + eggshells + pecan leaves + banana leaves + fig leaves.\nAlt: banana peel tea (4-5 peels in 1 gallon water\, soak 48 hours). REPEAT MONTHLY.
+CATEGORIES:MAINTENANCE
+END:VEVENT
+BEGIN:VEVENT
+UID:126@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🧂 MONTHLY: Epsom salt spray - tomatoes and peppers
+DESCRIPTION:Bi-weekly: spray tomatoes and peppers with Epsom salt solution.\n1 tablespoon per gallon of water.\nSpray directly on leaves early morning.\nMagnesium fuels chlorophyll and flower production.\nEspecially important in your nitrogen-rich right bed.\nApply after any heavy rain. REPEAT MONTHLY.
+CATEGORIES:MAINTENANCE
+END:VEVENT
+BEGIN:VEVENT
+UID:127@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:🔴 MONTHLY: Cat's claw vine check + cut
+DESCRIPTION:Monthly fence line patrol for cat's claw (Macfadyena unguis-cati) regrowth.\nCut ANY new growth before it reaches 6 inches.\nDig out underground tubers whenever found - look like small potatoes.\nSpray regrowth with vinegar + salt + dish soap.\nCoral vine will eventually outcompete it - support coral vine.\nExpect 2-3 year battle. REPEAT MONTHLY.
+CATEGORIES:MAINTENANCE
+END:VEVENT
+BEGIN:VEVENT
+UID:128@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🌿 MONTHLY: Add pecan leaves to compost tea
+DESCRIPTION:Collect fallen pecan leaves monthly October through December.\nAdd to compost tea bucket - high in zinc\, phosphorus\, potassium\, tannins.\nZinc is especially valuable for tomato and pepper production.\nShells from harvested pecans also go in bucket.\nMild juglone in leaves is fine for compost tea - composted down safely. REPEAT MONTHLY Oct-Dec.
+CATEGORIES:MAINTENANCE
+END:VEVENT
+BEGIN:VEVENT
+UID:129@nola-garden
+DTSTAMP:20260628T160000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🍌 MONTHLY: Banana leaf + pseudostem collection
+DESCRIPTION:Collect dead banana leaves when they die back.\nAdd to compost tea bucket - extraordinarily high potassium.\nChop dead pseudostems and lay around beds as slow-release mulch.\nThis is some of the richest free fertilizer material in your yard.\nDo monthly whenever leaves die back. REPEAT MONTHLY.
+CATEGORIES:MAINTENANCE
+END:VEVENT
+END:VCALENDAR
