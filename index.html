@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My New Orleans Garden — Zone 9b</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════
+   BAUHAUS — MY NOLA GARDEN
+   Primary colours + black + white
+   Form follows function. Grid is law.
+═══════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --R:#D42B2B;--B:#1B3FA0;--Y:#F5C400;
+  --K:#111111;--W:#FFFFFF;--P:#F2F0ED;
+  --G:#E8E6E2;--GD:#555555;
+}
+html{scroll-behavior:smooth}
+body{background:var(--P);font-family:'IBM Plex Sans',sans-serif;color:var(--K);line-height:1.65;font-size:15px}
+
+/* HEADER */
+header{background:var(--B);color:var(--W);min-height:280px;position:relative;overflow:hidden;display:flex;align-items:flex-end;border-bottom:8px solid var(--Y)}
+header::before{content:'';position:absolute;top:-100px;right:-100px;width:420px;height:420px;border-radius:50%;background:var(--R);opacity:.18;pointer-events:none}
+header::after{content:'';position:absolute;bottom:8px;left:0;right:0;height:2px;background:rgba(255,255,255,.1)}
+.hi{position:relative;z-index:1;margin:32px 0 16px 40px;padding:40px 48px 36px 24px;border-left:20px solid var(--R)}
+.hi h1{font-family:'Oswald',sans-serif;font-size:clamp(2.4rem,7vw,4.8rem);font-weight:700;text-transform:uppercase;letter-spacing:-.01em;color:var(--W);line-height:.95}
+.hi .sub{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--Y);margin-top:14px}
+.hi .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.hi .tags span{border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75);padding:3px 12px;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase}
+
+/* SEARCH */
+.sb{background:var(--K);padding:12px 24px;position:sticky;top:0;z-index:100}
+.si{max-width:900px;margin:0 auto;display:flex;gap:14px;align-items:center}
+.sb input{flex:1;padding:9px 14px 9px 40px;border:none;border-bottom:2px solid #444;background:#222;color:var(--W);font-family:'IBM Plex Sans',sans-serif;font-size:.88rem;outline:none}
+.sb input:focus{border-bottom-color:var(--Y)}
+.sb input::placeholder{color:#666}
+.sc{font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:#666;white-space:nowrap}
+
+/* NAV */
+nav{background:#0a0a0a;border-top:1px solid #222;overflow-x:auto}
+nav .ni{max-width:900px;margin:0 auto;display:flex}
+.n{color:#777;text-decoration:none;font-family:'Oswald',sans-serif;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:11px 14px;white-space:nowrap;border-bottom:3px solid transparent;transition:all .15s}
+.n:hover{color:var(--W);border-bottom-color:var(--R)}
+
+/* PAGE */
+.page{max-width:900px;margin:0 auto;padding:0 32px 100px}
+
+/* SECTIONS */
+section{margin-top:72px}
+.sr{padding:0 0 0 20px;margin-bottom:24px}
+.ey{font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--GD);margin-bottom:4px}
+section h2{font-family:'Oswald',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--K);line-height:1}
+.prose{font-size:.88rem;color:#333;line-height:1.8;margin-bottom:20px}
+
+/* CALLOUTS */
+.co{padding:14px 18px;margin:14px 0;font-size:.83rem;line-height:1.65}
+.co-title{font-family:'Oswald',sans-serif;font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}
+.co-text{font-size:.81rem;color:#333;line-height:1.65}
+
+/* CARD GRID */
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));border:2px solid var(--K);margin:16px 0 28px}
+.card{background:var(--W);border-right:2px solid var(--K);border-bottom:2px solid var(--K);padding:0 0 16px}
+.card:hover{background:var(--P)}
+.cb{height:6px;margin-bottom:14px}
+.ci{font-size:1.4rem;line-height:1;padding:0 16px;margin-bottom:8px}
+.ct{font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--K);padding:0 16px;margin-bottom:5px;line-height:1.2}
+.cd{font-size:.76rem;color:#444;line-height:1.55;padding:0 16px}
+
+/* TABLES */
+.tw{overflow-x:auto;border:2px solid var(--K);margin:16px 0 24px}
+table{width:100%;border-collapse:collapse;font-size:.8rem}
+thead{background:var(--K);color:var(--W)}
+th{padding:10px 14px;text-align:left;font-family:'Oswald',sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}
+td{padding:9px 14px;border-top:1px solid var(--G);color:#333;vertical-align:top}
+tr:nth-child(even) td{background:var(--P)}
+tr:hover td{background:#FFF8D6}
+
+/* SECTION HEADINGS (for seeds table sub-titles) */
+.sh{font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--W);background:var(--K);padding:9px 18px;margin:28px 0 14px;display:block}
+
+/* CALENDAR */
+.mb{margin-bottom:32px}
+.mh{padding:10px 18px;color:var(--W);font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;gap:12px;margin-bottom:0}
+.mc{font-family:'IBM Plex Mono',monospace;font-size:.6rem;color:rgba(255,255,255,.5);background:rgba(0,0,0,.25);padding:2px 9px;letter-spacing:.05em}
+.el{border:2px solid var(--K);border-top:none}
+.ev{display:flex;align-items:center;background:var(--W);border-bottom:1px solid var(--G);min-height:30px;cursor:pointer;transition:background .1s}
+.ev:last-child{border-bottom:none}
+.ev:hover{background:var(--P)}
+.es{width:5px;height:30px;flex-shrink:0}
+.esum{flex:1;font-size:.8rem;padding:6px 12px;color:var(--K);line-height:1.3}
+.eb{font-family:'Oswald',sans-serif;font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;color:var(--W);white-space:nowrap;margin-right:8px;flex-shrink:0}
+
+/* FOOTER */
+footer{background:var(--K);color:#555;text-align:center;padding:28px 24px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;border-top:8px solid var(--R)}
+
+/* SEARCH HIGHLIGHT */
+mark{background:var(--Y);color:var(--K);padding:0 2px}
+.hidden{display:none!important}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .hi{margin:20px 0 8px 16px;padding:32px 20px 28px 18px;border-left-width:10px}
+  .page{padding:0 16px 60px}
+  .cg{grid-template-columns:1fr}
+  .card{border-right:none}
+  .n{padding:10px 10px;font-size:.62rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hi">
+    <h1>My New Orleans Garden</h1>
+    <p class="sub">Personal Growing Guide &nbsp;·&nbsp; Zone 9b &nbsp;·&nbsp; June 2026</p>
+    <div class="tags">
+      <span>2 Galvanized Raised Beds</span>
+      <span>Cow Panel Arch Trellis</span>
+      <span>Pecan + Fig + Banana</span>
+      <span>Greenhouse</span>
+      <span>Permaculture Food Forest</span>
+    </div>
+  </div>
+</header>
+
+<div class="sb">
+  <div class="si">
+    <input type="text" id="q" placeholder="Search plants, months, tips…" oninput="search(this.value)">
+    <span class="sc" id="qc"></span>
+  </div>
+</div>
+
+<nav>
+  <div class="ni">
+    <a class="n" href="#yard">Overview</a><a class="n" href="#calendar">Season Planning</a><a class="n" href="#beds">Growing Spaces</a><a class="n" href="#trees">Permanent Plants</a><a class="n" href="#shed-bed">Perennial Border</a><a class="n" href="#fertilizer">Soil & Feeding</a><a class="n" href="#natives">Ecosystem Building</a><a class="n" href="#weeds">Plant Identification</a><a class="n" href="#pests">Pest & Disease</a><a class="n" href="#tomatoes">Crop Guide</a><a class="n" href="#seeds">Greenhouse & Seeds</a><a class="n" href="#calendar-full">Year-Round Schedule</a>
+    <a class="n" href="#calendar-full">📅 Calendar</a>
+  </div>
+</nav>
+
+<div class="page" id="page">
+<section id="yard">
+  <div class="sr" style="border-left:8px solid #D42B2B">
+    <div class="ey">Overview</div>
+    <h2>My Yard — Layout &amp; Microclimate</h2>
+  </div>
+  <p class="prose">New Orleans Zone 9b backyard with a mature pecan canopy, large banana grove on the west side, two galvanized raised beds connected by a cow panel arch trellis, a small greenhouse, and a perennial border bed by the shed. The beds sit in the best sun corridor in the yard — open southern sky with roughly 6–7 hours of direct sun daily. Shade arrives from the northeast around 5pm.</p>
+  <div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Food Forest Layers Already in Place</div>
+  <div class="co-text">Canopy (pecan) → Sub-canopy (banana, fig) → Shrub (border perennials) → Ground (raised beds) → Vine (arch trellis crops). Missing layers to add: understory fruiting shrubs (elderberry, pawpaw) and fungal layer (wine cap mushrooms at banana base).</div>
+</div>
+  <div class="cg"><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">☀️</div>
+  <div class="ct">Sun Corridor</div>
+  <div class="cd">Open southern sky above both beds. Morning sun from east from ~7am. Pecan + banana filter afternoon light. Shade hits around 5pm from northeast. Best sun: 10am–4pm.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🌳</div>
+  <div class="ct">Pecan Tree</div>
+  <div class="cd">Mature native pecan directly behind beds. Dense but gapped canopy. Provides mineral-rich leaf litter, hosts 200+ native insect species. Harvest October–December.</div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">🍌</div>
+  <div class="ct">Banana Grove</div>
+  <div class="cd">Large grove on west side. Creates warm humid microclimate, acts as windbreak. Leaves are high-potassium compost tea gold. Plant turmeric and ginger at the base.</div>
+</div><div class="card">
+  <div class="cb" style="background:#111111"></div>
+  <div class="ci">🏠</div>
+  <div class="ct">Greenhouse</div>
+  <div class="cd">Small greenhouse to the right of the beds. Use for seed starting December–February. Start tomatoes in December for February transplants. Perfect for lisianthus and snapdragons.</div>
+</div></div>
+  <div class="tw"><table><thead><tr><th>Zone</th><th>Conditions</th><th>Best Use</th></tr></thead><tbody><tr><td>Banana grove (west)</td><td>Dappled shade, high humidity, rich soil</td><td>Turmeric, ginger, taro, shade herbs</td></tr><tr><td>Under pecan (center-back)</td><td>Dappled shade, mineral leaf litter</td><td>Native groundcovers, pawpaw, spiderwort, fig</td></tr><tr><td>Raised bed area (center)</td><td>Best sun 6–7hrs, open sky south</td><td>Current beds — right call!</td></tr><tr><td>Shed border (right)</td><td>Good southern exposure, sheltered</td><td>Perennial herbs, natives, cut flowers, coral vine</td></tr><tr><td>Greenhouse (right-back)</td><td>Protected, controlled</td><td>Seed starting, overwintering tropicals</td></tr></tbody></table></div>
+</section><section id="calendar">
+  <div class="sr" style="border-left:8px solid #1B3FA0">
+    <div class="ey">Season Planning</div>
+    <h2>Full Year Planting Calendar</h2>
+  </div>
+  
+  <div class="co" style="background:#E6ECFA;border-left:6px solid #1B3FA0">
+  <div class="co-title">New Orleans Key Insight</div>
+  <div class="co-text">Your &quot;winter&quot; is your spring. October–March is prime growing season. Summer (June–August) is survival mode for most crops. Plan around this inverted calendar and you&#x27;ll always have something growing.</div>
+</div>
+  
+  <div class="tw"><table><thead><tr><th>Month</th><th>Trellis / Arch</th><th>Left Bed (Flowers)</th><th>Right Bed (Veggies)</th><th>Key Tasks</th></tr></thead><tbody><tr><td>July</td><td>Cucumbers finishing; sow Cinderella pumpkin late July at right base</td><td>Zinnias, celosias, gomphrena, marigolds direct sow</td><td>Soybeans, okra, Southern peas, Malabar spinach</td><td>Mulch 3–4&quot;, shade cloth 30–40% for seedlings, water 2–3x/week deep</td></tr><tr><td>August</td><td>Pumpkin vine establishing on right side</td><td>Last succession zinnias and sunflowers</td><td>Pumpkin growing; soybeans maturing</td><td>Add banana peels and pecan leaves to compost tea; heat survival mode</td></tr><tr><td>September</td><td>Pumpkin approaching maturity</td><td>Start indoors: snapdragons, stock, pansies, larkspur</td><td>Direct sow corn in 4×4 block late Sept; sow pole beans</td><td>Transition month — biggest planting window opens</td></tr><tr><td>October</td><td>Harvest pumpkins when fully orange with corky stem; plant sweet peas at both arch bases</td><td>Transplant snapdragons, stock, pansies, dianthus, alyssum</td><td>Corn growing; undersow radishes and lettuce</td><td>Direct sow larkspur, bachelor&#x27;s buttons, poppies — need cool temps to germinate</td></tr><tr><td>November</td><td>Sweet peas climbing both sides</td><td>Snapdragons and stock beginning to bloom</td><td>Harvest corn; pull stalks, amend with compost</td><td>Hand-pollinate corn by shaking tassels over silks each morning</td></tr><tr><td>December</td><td>Sweet peas climbing</td><td>Snapdragons + stock in full bloom — harvest often!</td><td>Kale, chard, lettuce, spinach, beets, carrots fill bed</td><td>Start determinate tomatoes indoors in greenhouse late December</td></tr><tr><td>January</td><td>Sweet peas blooming on both sides of arch</td><td>Sweet peas peak fragrance and blooms</td><td>Succession lettuce, spinach, cilantro, dill every 3 weeks</td><td>Start indeterminate tomatoes indoors; apply Epsom salt spray to winter crops</td></tr><tr><td>February</td><td>Sweet peas approaching end as warmth builds</td><td>Start zinnias, lisianthus, sunflowers indoors late Feb</td><td>Transplant determinate tomatoes out mid-Feb after last frost</td><td>Last frost typically mid-February; watch forecasts</td></tr><tr><td>March</td><td>Transition to tomatoes and cucumbers</td><td>Zinnias, sunflowers transplant out; dahlias go in</td><td>Transplant indeterminate tomatoes to left arch base; cucumbers to right</td><td>Stake and tie tomatoes weekly; begin bloom booster applications</td></tr><tr><td>April–May</td><td>Indeterminate tomatoes + cucumbers rocketing up arch</td><td>Dahlias, celosias, zinnias producing heavily</td><td>Tomatoes fruiting; succession sow soybeans and beans</td><td>Harvest cucumbers every 1–2 days; shake tomatoes for pollination</td></tr><tr><td>June</td><td>Cucumbers peak; start transitioning as heat builds</td><td>Succession sow zinnias + celosias every 3–4 weeks</td><td>Harvest tomatoes before heat stops fruit set above 95°F</td><td>Prep for July pumpkin planting; compost tea every 7–10 days</td></tr></tbody></table></div><div class="tw"><table><thead><tr><th>Season</th><th>Left Side of Arch</th><th>Right Side of Arch</th></tr></thead><tbody><tr><td>Jul–Oct</td><td>Cinderella Pumpkin 🎃</td><td>Finishing cucumbers → second pumpkin vine</td></tr><tr><td>Oct–Feb</td><td>Sweet Peas 🌸</td><td>Sweet Peas 🌸 — meet at the top!</td></tr><tr><td>Feb–Jun</td><td>Indeterminate Tomatoes 🍅</td><td>Cucumbers (Ashley + Boston Pickling) 🥒</td></tr></tbody></table></div>
+</section><section id="beds">
+  <div class="sr" style="border-left:8px solid #F5C400">
+    <div class="ey">Growing Spaces</div>
+    <h2>The Raised Beds — What&#x27;s Growing</h2>
+  </div>
+  <p class="prose">Oval/elongated galvanized bed. Currently home to the flower garden and herb collection with the left side of the arch trellis for tall climbers.</p><p class="prose">Plant compactly with low-growing companions acting as living mulch to suppress weeds, retain moisture, and feed soil biology.</p>
+  <div class="co" style="background:#FFF8D6;border-left:6px solid #C8A000">
+  <div class="co-title">Fennel Warning — Remove from Beds</div>
+  <div class="co-text">Fennel releases allelopathic chemicals that inhibit tomatoes, beans, lisianthus, and most vegetables. Move fennel to its own container away from both beds. It will be happier isolated and so will everything else.</div>
+</div>
+  <div class="cg"><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌶️</div>
+  <div class="ct">Big Bertha Peppers</div>
+  <div class="cd">Heat-loving, prolific producer through fall. Keep well watered. Will produce heavily September–November. No additional nitrogen needed — beans in right bed are fixing plenty.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🍅</div>
+  <div class="ct">Chadwick Tomato</div>
+  <div class="cd">Heirloom cherry type, very vigorous indeterminate. Currently has fruit not yet ripening — normal for June heat. Cut back 1/3 in late August for fall flush. Cage may need supplementing as it grows.</div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">🫐</div>
+  <div class="ct">Purple Cherry Tomato</div>
+  <div class="cd">Not yet flowering as of late June — likely due to nitrogen-rich soil from neighboring legumes + heat stress. Apply bloom booster (high phosphorus), Epsom salt spray. Should flower September.</div>
+</div><div class="card">
+  <div class="cb" style="background:#111111"></div>
+  <div class="ci">🌿</div>
+  <div class="ct">Basil</div>
+  <div class="cd">Perfect companion for tomatoes and peppers. Pinch flower buds as they appear to keep leafy. Thrives in summer heat. Harvest regularly — cut to just above a leaf pair.</div>
+</div><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌿</div>
+  <div class="ct">Parsley</div>
+  <div class="cd">Biennial — will bolt in year 2. Host plant for Black Swallowtail butterfly caterpillars. If caterpillars appear, let them be — they become beautiful butterflies. Plant more in fall for winter harvest.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🌱</div>
+  <div class="ct">Chives</div>
+  <div class="cd">Perennial in 9b. Will spread slowly to fill gaps — let them. Flowers are edible and attract pollinators. Excellent companion deterring aphids. Divide every few years to reinvigorate.</div>
+</div><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌾</div>
+  <div class="ct">Lemongrass</div>
+  <div class="cd">Perennial in 9b, gets very large. Mosquito repellent. Harvest outer stalks for cooking Thai/Vietnamese dishes. Makes excellent compost tea addition — high in silica which strengthens plant cell walls.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">⚠️</div>
+  <div class="ct">Foxglove</div>
+  <div class="cd">Beautiful but ALL parts are toxic to children and pets. With children playing in the yard, consider moving to a container placed out of reach, or replacing with equally dramatic celosia or salvia.</div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">🌼</div>
+  <div class="ct">Yarrow</div>
+  <div class="cd">Dynamic accumulator — deep roots mine calcium, potassium, phosphorus. Harvest leaves for compost tea. Will spread on its own. Flowers attract beneficial predatory wasps that eat garden pests.</div>
+</div><div class="card">
+  <div class="cb" style="background:#111111"></div>
+  <div class="ci">🌸</div>
+  <div class="ct">Zinnias</div>
+  <div class="cd">Succession sow every 3–4 weeks through June for continuous cut flowers. Heat-lovers — thrive in summer. Cut to a leaf node with at least 2 sets of leaves below the cut. The more you cut, the more they</div>
+</div><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🥒</div>
+  <div class="ct">Ashley Cucumber</div>
+  <div class="cd">Southern heirloom bred at Clemson University specifically for hot, humid Southeast climates. Pick at 6–7 inches. Harvest every 1–2 days once producing or they go bitter and slow production. Check insi</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🥒</div>
+  <div class="ct">Boston Pickling Cucumber</div>
+  <div class="cd">Prolific producer. Best picked at 3–4 inches for peak pickling flavor. Will produce heavily as long as you keep harvesting. Both cucumber varieties will wind down August–September.</div>
+</div></div>
+  <div class="tw"><table><thead><tr><th>Plant</th><th>Role</th><th>Plant Now?</th></tr></thead><tbody><tr><td>Sweet potato vine</td><td>Best living mulch for summer — spreads fast, edible, loves brutal heat. Plant slips at bas</td><td>✅ Yes, immediately</td></tr><tr><td>Nasturtiums</td><td>Edible flowers, trap crop for aphids, trails beautifully between plants. Draws pests away </td><td>✅ Yes, immediately</td></tr><tr><td>Purslane</td><td>Self-spreading succulent, holds moisture, edible and nutritious, thrives in heat that kill</td><td>✅ Yes, direct sow</td></tr><tr><td>Dwarf French marigolds</td><td>Nematode deterrent in soil, pest repellent above ground. Tuck between every vulnerable pla</td><td>✅ Yes, transplants available now</td></tr><tr><td>Gomphrena</td><td>Heat-tolerant cut flower, blooms all summer without complaint in New Orleans. Direct sow o</td><td>✅ Yes, immediately</td></tr><tr><td>Malabar spinach</td><td>Heat-loving edible green that climbs. Beautiful glossy leaves, productive all summer when </td><td>✅ Yes, direct sow at trellis</td></tr><tr><td>Creeping thyme</td><td>Stays flat, handles heat, deters pests, edible, perennial in 9b. Gets better every year.</td><td>✅ Yes, transplants</td></tr></tbody></table></div>
+</section><section id="trees">
+  <div class="sr" style="border-left:8px solid #111111">
+    <div class="ey">Permanent Plants</div>
+    <h2>Trees, Fruit &amp; Perennial Food Plants</h2>
+  </div>
+  
+  <div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Do NOT judge ripeness by color alone</div>
+  <div class="co-text">— LSU light varieties can be ripe while still quite green. Look for ALL of these signs together: fruit droops downward on stem · soft to gentle squeeze · skin begins to wrinkle slightly · neck/stem withers and bends · tiny drop of nectar at eye (bottom) · pulls off with gentle upward twist. Check every morning once softening begins — they ripen in 2–3 days and birds watch just as closely.</div>
+</div>
+  <div class="cg"><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌰</div>
+  <div class="ct">Pecan Tree</div>
+  <div class="cd">Native Louisiana keystone species. Hosts 200+ native insect species. Leaf litter high in zinc, phosphorus, potassium — add to compost tea. Harvest October–December. Shells = slow-release mulch. Mild j</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🍌</div>
+  <div class="ct">Banana Grove</div>
+  <div class="cd">Creates humid microclimate, west windbreak. Dead leaves and pseudostems = extraordinary high-potassium compost material. Chop and drop dead pseudostems as mulch around beds. Plant turmeric and ginger </div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">🍑</div>
+  <div class="ct">LSU Fig (Gold or O&#x27;Rourke)</div>
+  <div class="cd">Grows at base of pecan. Light-colored variety, likely LSU Gold or O&#x27;Rourke — legendary honey-sweet eating figs. Two crops: breba June–July (current), main August–October. Harvest when fruit droops, ne</div>
+</div></div>
+  <div class="tw"><table><thead><tr><th>Plant</th><th>Why Here</th><th>Bonus</th></tr></thead><tbody><tr><td>Turmeric</td><td>Loves dappled shade, moist humid conditions — evolved with bananas</td><td>Harvest fresh turmeric rhizomes fall</td></tr><tr><td>Ginger</td><td>Same conditions as turmeric, grows wild in Louisiana</td><td>Fresh ginger all year; add leaves to compost tea</td></tr><tr><td>Taro (Colocasia)</td><td>Grows wild in NOLA, edible corms, enormous tropical leaves</td><td>Edible corms; ornamental</td></tr><tr><td>Perilla / Shiso</td><td>Self-seeds under trees, handles humidity beautifully</td><td>Edible, pest deterrent</td></tr></tbody></table></div>
+</section><section id="shed-bed">
+  <div class="sr" style="border-left:8px solid #D42B2B">
+    <div class="ey">Perennial Border</div>
+    <h2>Shed Bed — What&#x27;s Growing</h2>
+  </div>
+  <p class="prose">Brick-edged perennial border beside the shed. Features coral vine on the fence, established perennials, and the ongoing battle with cat&#x27;s claw vine. A low-maintenance pollinator and sensory garden that feeds beneficial insects which support the vegetable beds nearby.</p>
+  <div class="co" style="background:#FFE8E8;border-left:6px solid #D42B2B">
+  <div class="co-title">Cat&#x27;s Claw Vine Battle Plan</div>
+  <div class="co-text">Macfadyena unguis-cati is one of the most invasive vines in Louisiana. This week: cut ALL vines at the base — do NOT compost (bag and trash, they re-root). Dig out underground tubers (look like small potatoes) — these are the real enemy. Spray any regrowth immediately with vinegar + salt + dish soap. Expect a 2–3 year battle. Check monthly, cut any new growth before 6 inches long. The coral vine w</div>
+</div>
+  <div class="cg"><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌸</div>
+  <div class="ct">Coral Vine</div>
+  <div class="cd">Antigonon leptopus — native to Mexico, perennial in 9b. Heart-shaped leaves, cascading pink flowers. Your ally against cat&#x27;s claw — it will eventually outcompete it for fence space if you keep cutting</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">💜</div>
+  <div class="ct">Victorian Blue Salvia</div>
+  <div class="cd">Perennial in 9b. Blooms spring through frost. Hummingbird and butterfly magnet. Cut back by half after each flush of bloom to encourage repeat flowering. One of the best low-maintenance pollinators fo</div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">💜</div>
+  <div class="ct">Tradescantia zebrina</div>
+  <div class="cd">Formerly &quot;Wandering Jew&quot; — now correctly called Tradescantia or Spiderwort. Deep purple with silver striping. Essentially indestructible in your climate. Excellent groundcover. Edible. Good compost ma</div>
+</div><div class="card">
+  <div class="cb" style="background:#111111"></div>
+  <div class="ci">🌸</div>
+  <div class="ct">Lantana (2 colors)</div>
+  <div class="cd">Perennial in 9b — butterfly magnet, especially monarchs and swallowtails. Virtually indestructible in Louisiana summer heat. Cut back hard in late winter to keep tidy. Berries are toxic to children an</div>
+</div><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">💙</div>
+  <div class="ct">Blue Aster</div>
+  <div class="cd">Currently potted — plan to put in ground. Late summer/fall bloomer when pollinators need it most. Plant in the sunniest spot of the bed. Divide every 2–3 years to keep vigorous. One of the last plants</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🌿</div>
+  <div class="ct">Aloe Vera</div>
+  <div class="cd">Will get very large in 9b left in ground. Practical household plant — keep accessible for burns and skin (especially useful with kids). Will produce pups you can divide and pot as gifts. Can stay in b</div>
+</div><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌾</div>
+  <div class="ct">Blue Fescue Grass</div>
+  <div class="cd">Beautiful steel-blue ornamental grass. Currently has mystery weed growing through center — remove carefully by tracing stem to root and pulling. Grasses are very hard to weed once something establishe</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🌸</div>
+  <div class="ct">Easter Lilies</div>
+  <div class="cd">Naturalized in your bed — they re-bloom in summer in 9b (not Easter, since forcing gets reset to natural cycle). Will multiply into larger clumps each year. After bloom: don&#x27;t cut stems until fully ye</div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">💜</div>
+  <div class="ct">Wild Petunia (Ruellia)</div>
+  <div class="cd">Ruellia caroliniensis — spontaneous native volunteer in your bed. Lavender trumpet flowers, blooms nearly continuously spring through frost. Natural nematode suppressor in soil. Gulf Fritillary butter</div>
+</div><div class="card">
+  <div class="cb" style="background:#111111"></div>
+  <div class="ci">🌺</div>
+  <div class="ct">Jewels of Opar (8 ready)</div>
+  <div class="cd">Talinum paniculatum — airy magenta flower sprays, 18–24 inches tall. Self-seeds prolifically in New Orleans — you&#x27;ll have dozens of volunteers next year. Plant between lantana. More shade tolerant tha</div>
+</div></div>
+  <div class="tw"><table><thead><tr><th>Plant</th><th>Why</th></tr></thead><tbody><tr><td>Society Garlic (Tulbaghia violacea)</td><td>Perennial in 9b, lavender flowers nearly year-round, garlic scent deters pests, zero maint</td></tr><tr><td>Rosemary (already have!)</td><td>Perennial shrub in 9b. Let it grow large — it becomes a substantial specimen. Flowers feed</td></tr></tbody></table></div>
+</section><section id="fertilizer">
+  <div class="sr" style="border-left:8px solid #1B3FA0">
+    <div class="ey">Soil &amp; Feeding</div>
+    <h2>Fertilizer, Compost Tea &amp; Soil Health</h2>
+  </div>
+  <p class="prose">Your pecan tree has been building a mycorrhizal fungal network in your soil for years. Your raised beds are likely tapping into it. To protect and strengthen it: never use fungicides anywhere in the yard. Add mycorrhizal inoculant to transplant holes. Your no-dig, living mulch philosophy is already perfect. Plant native species around the tree base (goldenrod, spiderwort, wild bergamot) to strengthen the network.</p>
+  <div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Your Weed Compost Tea Bucket</div>
+  <div class="co-text">Already brilliant — free, hyperlocal fertilizer perfectly tuned to your soil. Always dilute to the color of weak iced tea before applying. Apply to moist (not dry) soil, early morning. Every 7–10 days during growing season.</div>
+</div><div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Comfrey (Symphytum officinale)</div>
+  <div class="co-text">— Plant 1–2 in a corner of your yard. Perennial in 9b, comes back bigger every year. Harvest leaves 4–5 times per season. Makes the most potent homemade fertilizer tea of anything you can grow — extremely high in potassium and phosphorus. Known as &quot;liquid gold.&quot; The one plant that could replace every store-bought fertilizer for your entire garden long-term.</div>
+</div>
+  
+  <div class="tw"><table><thead><tr><th>Ingredient</th><th>Nutrients</th><th>Effect</th><th>How to Use</th></tr></thead><tbody><tr><td>Banana peels</td><td>High potassium + phosphorus</td><td>Triggers flowering</td><td>Throw straight in bucket, riper = better</td></tr><tr><td>Yarrow cuttings</td><td>Deep-mined calcium, potassium, phosphorus</td><td>Activates whole tea</td><td>Harvest from your existing plant, add to bucket</td></tr><tr><td>Eggshells</td><td>Calcium</td><td>Prevents blossom end rot on tomatoes/peppers</td><td>Crush and add to bucket</td></tr><tr><td>Pecan leaves</td><td>Zinc, phosphorus, potassium, tannins</td><td>Zinc boosts tomato + pepper production</td><td>Add fallen leaves from your own tree</td></tr><tr><td>Banana leaves (from your grove)</td><td>Extremely high potassium</td><td>Bloom booster</td><td>Chop dead leaves and steep in bucket</td></tr><tr><td>Fig leaves</td><td>High potassium</td><td>Bloom and fruit support</td><td>Add to bucket when pruning fig</td></tr><tr><td>Wood ash</td><td>Potassium, raises pH</td><td>Helps flowering</td><td>Small handful only — don&#x27;t overdo</td></tr></tbody></table></div><div class="tw"><table><thead><tr><th>Weed</th><th>Nutrients Added</th><th>Notes</th></tr></thead><tbody><tr><td>Dandelion</td><td>Potassium, calcium, iron</td><td>One of the best — deep taproot miner</td></tr><tr><td>Clover</td><td>Nitrogen, phosphorus</td><td>Excellent — fixes nitrogen from air</td></tr><tr><td>Chickweed</td><td>Potassium, phosphorus</td><td>Also edible in salads</td></tr><tr><td>Broadleaf plantain</td><td>Calcium, silica</td><td>Silica strengthens plant cell walls</td></tr><tr><td>Purslane</td><td>Phosphorus, magnesium</td><td>Edible and nutritious — also eat it!</td></tr><tr><td>Wild Ruellia (your volunteer!)</td><td>Various minerals</td><td>Trim and add to bucket</td></tr></tbody></table></div>
+</section><section id="natives">
+  <div class="sr" style="border-left:8px solid #F5C400">
+    <div class="ey">Ecosystem Building</div>
+    <h2>Native Plants — Recommended for Your Yard</h2>
+  </div>
+  <p class="prose">Native plants evolved with your exact soil, rainfall, humidity and insects over thousands of years. They require less water, fewer inputs, and actively build the ecosystem that makes your whole garden more productive.</p>
+  
+  <div class="cg"><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌿</div>
+  <div class="ct">Wild Blue Indigo (Baptisia)</div>
+  <div class="cd">Deep taproot breaks compacted soil, fixes nitrogen, drought tolerant once established. Perennial — comes back bigger each year. Stunning blue flowers in spring.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🌼</div>
+  <div class="ct">Black-Eyed Susan (Rudbeckia)</div>
+  <div class="cd">Native Louisiana wildflower, blooms when pollinators need it most in summer heat, self-seeds prolifically. Perfect low-maintenance addition.</div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">💜</div>
+  <div class="ct">Ironweed (Vernonia)</div>
+  <div class="cd">Deep purple flowers in late summer. Deep taproot breaks compacted clay, mines minerals. Monarch butterfly magnet. Leaves excellent for compost tea.</div>
+</div><div class="card">
+  <div class="cb" style="background:#111111"></div>
+  <div class="ci">🌸</div>
+  <div class="ct">Cardinal Flower (Lobelia)</div>
+  <div class="cd">Loves moist spots. Hummingbirds are obsessed with it. Native to Louisiana wetlands — handles summer rain events without rotting. Brilliant red spikes.</div>
+</div><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌺</div>
+  <div class="ct">Eastern Redbud</div>
+  <div class="cd">Small native tree, fixes nitrogen, edible flowers in salads, provides dappled shade moderating soil temperature. Stunning spring bloom.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🫐</div>
+  <div class="ct">American Beautyberry</div>
+  <div class="cd">Louisiana native shrub. Crushed leaves repel mosquitoes and deer (research-backed). Stunning purple berries in fall. Birds love it. Perfect for the yard&#x27;s edges.</div>
+</div><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌿</div>
+  <div class="ct">Wild Bergamot (Monarda)</div>
+  <div class="cd">Native to Louisiana, deep roots mine calcium and magnesium. Leaves make tea for humans. Attracts hummingbirds and native bees constantly.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🦋</div>
+  <div class="ct">Pawpaw (Asimina triloba)</div>
+  <div class="cd">Louisiana native understory tree. Loves growing under pecans. Produces tropical-tasting edible fruit. Host plant for Zebra Swallowtail butterfly. Rare and exciting.</div>
+</div></div>
+  <div class="tw"><table><thead><tr><th>Plant</th><th>Why First</th><th>Where to Plant</th></tr></thead><tbody><tr><td>Native Passionflower (Passiflora incarnata)</td><td>Arch vine + butterflies + edible passion fruit. Gulf Fritillary + Zebra Longwing host plan</td><td>Base of arch when not in use</td></tr><tr><td>Partridge Pea</td><td>Fast nitrogen fixer this season, yellow flowers attract native bees, self-seeds</td><td>Between beds, sunny border</td></tr><tr><td>Goldenrod (Solidago)</td><td>Late summer pollinator boost for fall crops, mineral accumulator, bees go wild for it</td><td>Sunny border, around bed edges</td></tr><tr><td>Swamp Milkweed (Asclepias incarnata)</td><td>Monarch host plant, thrives in Louisiana humidity, beautiful pink flowers all summer</td><td>Sunny spot, border bed</td></tr><tr><td>Sensitive Plant (Mimosa strigillosa)</td><td>Low-growing nitrogen-fixing native groundcover. NOT the invasive tree — stays flat. Perfec</td><td>Ground between and around beds</td></tr><tr><td>Spiderwort (Tradescantia ohiensis)</td><td>Early spring pollinator food, spreads to fill gaps, handles pecan shade</td><td>Under pecan tree edge</td></tr></tbody></table></div>
+</section><section id="weeds">
+  <div class="sr" style="border-left:8px solid #111111">
+    <div class="ey">Plant Identification</div>
+    <h2>Weeds &amp; Volunteers — Keep or Pull?</h2>
+  </div>
+  
+  <div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Fastest ID Method: The Smell Test</div>
+  <div class="co-text">Crush a leaf and smell it. Lemon/citrus = lemon balm (keep). Strong mint = wild mint (keep). Herbal/catnip = catnip (keep). No real smell = likely chamber bitter or caesar weed (pull or use for tea). Milky sap = spurge (pull and wash hands).</div>
+</div>
+  
+  <div class="tw"><table><thead><tr><th>Plant</th><th>ID Clues</th><th>Decision</th><th>Use</th></tr></thead><tbody><tr><td>Wild Ruellia (your volunteer!)</td><td>Lavender trumpet flower, toothed hairy leaves, upright stem</td><td>KEEP</td><td>Leave in place, let self-seed as border plant. Nematode suppressor.</td></tr><tr><td>Lemon Balm</td><td>Crush leaf — strong lemon smell. Toothed oval leaves, square stem.</td><td>KEEP</td><td>Compost tea, mosquito repellent, edible tea for humans</td></tr><tr><td>Wild Mint</td><td>Strong mint smell when crushed. Square stem, opposite leaves.</td><td>KEEP</td><td>Compost tea, pest repellent, culinary use</td></tr><tr><td>Catnip</td><td>Herbal/catnip smell. Grayish-green slightly fuzzy leaves.</td><td>KEEP</td><td>Repels aphids and mosquitoes</td></tr><tr><td>Purslane</td><td>Thick succulent-looking low stems, small rounded leaves</td><td>KEEP</td><td>Edible and nutritious, excellent compost tea, living mulch</td></tr><tr><td>Chickweed</td><td>Small oval leaves, thin sprawling stems, tiny white flowers</td><td>KEEP</td><td>Edible in salads, excellent compost tea ingredient</td></tr><tr><td>Wood Sorrel</td><td>Clover-like leaves, sometimes heart-shaped leaflets, yellow or white tiny flowers</td><td>KEEP</td><td>Edible, lemony flavor in salads. Compost tea.</td></tr><tr><td>Dollarweed</td><td>Round coin-shaped leaves on center stems, spreads by runners</td><td>Neutral</td><td>Edible but not exciting. Indicates moist soil. Compost ok.</td></tr><tr><td>Chamber Bitter / Caesar Weed</td><td>No notable smell, oval toothed leaves, small and weedy looking</td><td>PULL</td><td>Fine for compost tea bucket but remove from beds</td></tr><tr><td>Nutsedge</td><td>Triangular stem (not round), grass-like, yellow-green. Stems don&#x27;t crush flat.</td><td>PULL IMMEDIATELY</td><td>Very difficult to control once established. Never compost.</td></tr><tr><td>Spurge</td><td>Milky white sap when stem broken. Low, mat-forming.</td><td>PULL</td><td>Bag and trash. Can irritate skin.</td></tr><tr><td>Cat&#x27;s Claw seedlings</td><td>Near fence. Yellow trumpet flowers when mature. Tiny tendrils with claw-shaped tips.</td><td>PULL IMMEDIATELY</td><td>Your mortal enemy. Pull every seedling before it establishes. Never compost.</td></tr></tbody></table></div>
+</section><section id="pests">
+  <div class="sr" style="border-left:8px solid #D42B2B">
+    <div class="ey">Pest &amp; Disease</div>
+    <h2>Pest Calendar &amp; Natural Controls</h2>
+  </div>
+  
+  
+  <div class="cg"><div class="card">
+  <div class="cb" style="background:#D42B2B"></div>
+  <div class="ci">🌼</div>
+  <div class="ct">French Dwarf Marigolds</div>
+  <div class="cd">Plant throughout both beds. Nematode deterrent in soil. Pest-repelling terpenes above ground. Place one next to every tomato, pepper, and cucumber plant.</div>
+</div><div class="card">
+  <div class="cb" style="background:#1B3FA0"></div>
+  <div class="ci">🌸</div>
+  <div class="ct">Nasturtiums</div>
+  <div class="cd">Aphid trap crop — aphids prefer nasturtiums over your vegetables. Plant near tomatoes. Flowers and leaves fully edible. Trails beautifully as living mulch.</div>
+</div><div class="card">
+  <div class="cb" style="background:#F5C400"></div>
+  <div class="ci">🌿</div>
+  <div class="ct">Chives + Basil</div>
+  <div class="cd">Already in your left bed! Chives deter aphids. Basil deters thrips and spider mites near tomatoes. Both actively working for you right now.</div>
+</div><div class="card">
+  <div class="cb" style="background:#111111"></div>
+  <div class="ci">🍃</div>
+  <div class="ct">American Beautyberry</div>
+  <div class="cd">Research-backed mosquito repellent when leaves are crushed. Plant around yard edges for passive mosquito deterrence in the play area.</div>
+</div></div>
+  <div class="tw"><table><thead><tr><th>Month</th><th>Watch For</th><th>Natural Control</th></tr></thead><tbody><tr><td>Apr–May</td><td>Pecan aphids moving to garden; aphids on tomatoes and peppers</td><td>Strong water spray to knock off; nasturtiums as trap crop; chives nearby deter</td></tr><tr><td>Jun–Jul</td><td>Spider mites (hot dry spells); squash bugs; cucumber beetles</td><td>Increase humidity with mulch; neem oil spray early morning; hand-pick eggs under leaves</td></tr><tr><td>Aug</td><td>Pecan weevil in tree; caterpillars on parsley (let them be — Black Swallowtail!)</td><td>Accept parsley caterpillars — they become butterflies. Hand-pick harmful caterpillars only</td></tr><tr><td>Sep–Oct</td><td>Squirrels competing for pecan harvest; slugs emerging with fall rains</td><td>Harvest pecans promptly. Crushed eggshells around slug-vulnerable plants.</td></tr><tr><td>Oct–Mar</td><td>Aphids on cool-season crops (kale, snapdragons); slugs in wet weather</td><td>Neem oil; chive companion planting; diatomaceous earth around slugs</td></tr><tr><td>Year-round</td><td>Nematodes in soil (especially near old lawn areas)</td><td>French marigolds planted throughout beds; wild Ruellia — both suppress nematodes naturally</td></tr></tbody></table></div>
+</section><section id="tomatoes">
+  <div class="sr" style="border-left:8px solid #1B3FA0">
+    <div class="ey">Crop Guide</div>
+    <h2>Tomatoes — Troubleshooting &amp; Variety Guide</h2>
+  </div>
+  
+  <div class="co" style="background:#FFF8D6;border-left:6px solid #C8A000">
+  <div class="co-title">Why New Orleans Tomatoes Stall in Summer</div>
+  <div class="co-text">Above 90°F daytime and 75°F nighttime, tomato pollen becomes sterile and fruit cannot ripen (can&#x27;t produce lycopene above 95°F). This is normal. Your real tomato harvest windows are: March–June and September–November. Plants going in April are racing the clock — next year start in December in the greenhouse and transplant February.</div>
+</div>
+  
+  <div class="tw"><table><thead><tr><th>Variety</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td>Chadwick (heirloom cherry)</td><td>Fruit set but not ripening — normal for June heat above 90°F</td><td>Harvest at first color break, ripen indoors on counter. Cut back 1/3 in late August for fa</td></tr><tr><td>Purple Cherry</td><td>No flowers yet — nitrogen-rich bed + heat stress</td><td>Apply bloom booster (high phosphorus, low nitrogen). Epsom salt spray weekly. Should flowe</td></tr></tbody></table></div><div class="tw"><table><thead><tr><th>Variety</th><th>Type</th><th>Why It Works Here</th></tr></thead><tbody><tr><td>Creole</td><td>Indeterminate</td><td>Louisiana heirloom, bred for heat and humidity. The classic New Orleans tomato.</td></tr><tr><td>Cherokee Purple</td><td>Indeterminate</td><td>Excellent flavor, handles humidity well, beautiful dark color</td></tr><tr><td>Celebrity</td><td>Determinate</td><td>Disease resistant, very reliable producer in Southern climates</td></tr><tr><td>Heatmaster</td><td>Determinate</td><td>Bred specifically for hot climates, sets fruit at higher temps than most varieties</td></tr><tr><td>Ashley Cucumber</td><td>Vine (not tomato)</td><td>Already growing! Bred at Clemson for hot humid Southeast — perfect choice</td></tr></tbody></table></div>
+</section><section id="seeds">
+  <div class="sr" style="border-left:8px solid #F5C400">
+    <div class="ey">Greenhouse &amp; Seeds</div>
+    <h2>Seed Starting Guide — Your 26 Varieties</h2>
+  </div>
+  <p class="prose">All seed starting information for your personal seed collection. Your greenhouse is a major advantage — use it December–March for warm-season starts and September–October for cool-season transplant production.</p>
+  <div class="co" style="background:#FFF8D6;border-left:6px solid #C8A000">
+  <div class="co-title">New Orleans Timing Key Insight</div>
+  <div class="co-text">Your &quot;winter&quot; is your &quot;spring.&quot; All peppers are PERENNIAL in 9b — cut back in February for bigger year-2 plants. Start tomatoes and peppers in December in your greenhouse. Tomatoes going in before mid-February will outperform April plantings dramatically. Cucumbers started in late January will be producing by April.</div>
+</div><div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Universal Tips for Your Greenhouse</div>
+  <div class="co-text">Use quality seed starting mix (not garden soil). Bottom water trays to prevent damping off fungus. Keep seeds at 70–80°F for germination. Label everything immediately. Harden off transplants over 7–10 days. Ensure airflow inside greenhouse to prevent mold in Louisiana humidity. Succession sow greens and herbs every 3 weeks.</div>
+</div><div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Zone 9b Perennial Advantage</div>
+  <div class="co-text">These plants in your seed collection are perennial in New Orleans — cut them back in late winter instead of pulling. Year 2 plants are always dramatically more productive than year 1. This is one of the biggest advantages of Zone 9b gardening that most guides don&#x27;t emphasize.</div>
+</div>
+  
+  <div class="tw"><table><thead><tr><th>Seed</th><th>Category</th><th>Start Method</th><th>When (NOLA)</th><th>Days</th></tr></thead><tbody><tr><td>Cal-Sweet Watermelon</td><td>Vine</td><td>Direct sow preferred</td><td>April</td><td>80–90</td></tr><tr><td>Dixie Queen Watermelon</td><td>Vine</td><td>Direct sow</td><td>April</td><td>85</td></tr><tr><td>Purple Carrot</td><td>Vegetable</td><td>Direct sow ONLY</td><td>Sept–Nov</td><td>70–80</td></tr><tr><td>Slobolt Lettuce</td><td>Vegetable</td><td>Direct sow / indoors</td><td>Sept–Mar</td><td>45–50</td></tr><tr><td>Bouquet Dill</td><td>Herb</td><td>Direct sow ONLY</td><td>Sept–Mar</td><td>40–60</td></tr><tr><td>All Seasons Cabbage</td><td>Vegetable</td><td>Start greenhouse</td><td>Aug–Sept</td><td>75–95</td></tr><tr><td>Arikara Yellow Bush Bean</td><td>Vegetable</td><td>Direct sow ONLY</td><td>Mar–May, Aug–Sept</td><td>60–65</td></tr><tr><td>Delicata Squash</td><td>Vine</td><td>Direct sow / biodeg pot</td><td>Late July</td><td>80–100</td></tr><tr><td>Ambrosia Corn</td><td>Vegetable</td><td>Direct sow</td><td>Feb–Mar, Sept</td><td>75</td></tr><tr><td>Boston Pickling Cucumber</td><td>Vine</td><td>Biodeg pot / direct</td><td>Late Jan / March</td><td>55–65</td></tr><tr><td>Chocolate Stripes Tomato</td><td>Fruit</td><td>Start greenhouse</td><td>Dec–Jan</td><td>75–85</td></tr><tr><td>Matt&#x27;s Wild Cherry Tomato</td><td>Fruit</td><td>Start greenhouse</td><td>Dec–Jan</td><td>60–65</td></tr><tr><td>Jimmy Nardello Pepper</td><td>Fruit</td><td>Start greenhouse</td><td>Dec–Jan</td><td>80–90</td></tr><tr><td>Jalapeño</td><td>Fruit</td><td>Start greenhouse</td><td>Dec–Jan</td><td>70–85</td></tr><tr><td>Sweet Banana Pepper</td><td>Fruit</td><td>Start greenhouse</td><td>Dec–Jan</td><td>70–75</td></tr><tr><td>Cinderella Pumpkin</td><td>Vine</td><td>Direct sow</td><td>Late July</td><td>100–110</td></tr><tr><td>Virginia Peanut</td><td>Vegetable</td><td>Direct sow raw seeds</td><td>April–May</td><td>120–130</td></tr><tr><td>Birdhouse Gourd</td><td>Vine</td><td>Soak 24hr then sow</td><td>March–April</td><td>110–130</td></tr><tr><td>Italian Striped Zucchini</td><td>Vine</td><td>Direct sow in-ground</td><td>Mar–Apr, Aug–Sept</td><td>50–55</td></tr><tr><td>Pink Swiss Chard</td><td>Vegetable</td><td>Direct sow / indoors</td><td>Sept–Mar</td><td>50–60</td></tr></tbody></table></div><div class="tw"><table><thead><tr><th>Month</th><th>Start in Greenhouse</th><th>Direct Sow Outdoors</th><th>Notes</th></tr></thead><tbody><tr><td>January</td><td>Tomatoes (all), peppers (all), bee balm (after cold stratifying)</td><td>Bachelor buttons, lettuce, dill, carrot, chard</td><td>Peppers need 80°F+ and heat mat. Start tomatoes 8 wks before Feb transplant.</td></tr><tr><td>February</td><td>Mammoth basil, cabbage (late Feb for spring), borage</td><td>Corn, bachelor buttons, lettuce, dill, borage, chard</td><td>Last frost typically mid-Feb. Harden off tomatoes and peppers started in Jan.</td></tr><tr><td>March</td><td>Birdhouse gourd (indoors 3–4 wks), zucchini (optional)</td><td>Ashley + Boston cucumbers, beans, birdhouse gourd, zucchini, borage</td><td>Transplant tomatoes and peppers to beds mid-March.</td></tr><tr><td>April</td><td>Second succession basil, next round peppers if needed</td><td>Watermelons (both), peanuts, beans, corn, birdhouse gourd</td><td>Warm season in full swing. No more cool-season sowing.</td></tr><tr><td>July</td><td>Nothing — too hot for greenhouse starting</td><td>Cinderella pumpkin, delicata squash, soybeans, okra</td><td>Direct sow at arch base. Keep well watered through establishment.</td></tr><tr><td>August</td><td>Cabbage, broccoli, kale for fall transplants</td><td>Beans, zucchini (late Aug)</td><td>Start cool-season brassicas 6 wks ahead of October planting.</td></tr><tr><td>September</td><td>Snapdragons, stock, pansies, lisianthus for fall flower beds</td><td>Lettuce, dill, carrot, chard, Swiss chard, beans, cucumber (fall run)</td><td>Prime cool-season window opens. Most important sowing month of year.</td></tr><tr><td>October</td><td>Start tomatoes for late winter (if desired for Jan transplant)</td><td>Bachelor buttons, larkspur, poppies, lettuce, carrot, dill, chard</td><td>Direct sow cool-season flowers now — they need cool temps to germinate.</td></tr><tr><td>December</td><td>Tomatoes, all peppers, basil</td><td>Lettuce, dill, chard if mild enough</td><td>Critical month — December starts = February transplants = April–June harvest.</td></tr></tbody></table></div>
+</section><section id="calendar-full">
+  <div class="sr" style="border-left:8px solid #111111">
+    <div class="ey">Year-Round Schedule</div>
+    <h2>Complete Garden Calendar — 129 Events</h2>
+  </div>
+  <p class="prose">Every sowing, transplanting, harvesting, and maintenance task across the full growing year. Filter by month or category, or search for any plant or task.</p>
+  <div class="co" style="background:#E8F5E8;border-left:6px solid #2A7A2A">
+  <div class="co-title">Download to iCal</div>
+  <div class="co-text">The full calendar is also available as a downloadable .ics file for Apple Calendar, Google Calendar, and Outlook. Each event includes detailed notes and troubleshooting tips in the description field.</div>
+</div>
+  
+  
+</section>
+<section id="calendar-full"><div class="sr" style="border-left:8px solid #D42B2B"><div class="ey">Year-Round Schedule</div><h2>Complete Garden Calendar — 129 Events</h2></div><div class="mb"><div class="mh" style="background:#1B3FA0;border-bottom:4px solid #F5C400">July 2026 <span class="mc">17 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌺 SOWING: Okra (summer heat crop)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🫘 SOWING: Southern Peas / Black-Eyed Peas</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌸 PLANT NOW: Jewels of Opar (8 plants ready!)</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🍠 PLANT NOW: Sweet Potato Slips</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💐 PLANT NOW: Nasturtiums (trap crop)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💐 PLANT NOW: Dwarf French Marigolds everywhere</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 PLANT NOW: Purslane as living mulch</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💐 PLANT NOW: Gomphrena (globe amaranth)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">☀️ MAINTENANCE: July heat protocol</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🥒 HARVEST: Cucumbers daily through July</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🪣 MONTHLY: Apply compost tea to all beds</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🧂 MONTHLY: Epsom salt spray - tomatoes and peppers</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🔴 MONTHLY: Cat&#x27;s claw vine check + cut</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🎃 SOWING: Cinderella Pumpkin at arch base</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥒 SOWING: Delicata Squash at arch base</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 SOWING: Soybeans / Edamame (summer)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 SOWING: Malabar Spinach at decorative trellis</span><span class="eb" style="background:#1B3FA0">Seeds</span></div></div></div><div class="mb"><div class="mh" style="background:#111111;border-bottom:4px solid #D42B2B">August 2026 <span class="mc">9 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 Succession sow Zinnias + Celosias</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 GREENHOUSE: Start All Seasons Cabbage</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌸 GREENHOUSE: Start Snapdragons + Stock + Lisianthus</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌸 GREENHOUSE: Start Pansies + Dianthus + Alyssum</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌻 GREENHOUSE: Start Sunflowers (last summer succession)</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 SOWING: Zinnias + Celosias (last summer succession)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🎃 MAINTENANCE: Make fruit slings for pumpkins/squash</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🍅 MAINTENANCE: Cut tomatoes back 1/3 for fall flush</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 Start cool-season transplants in greenhouse</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div></div></div><div class="mb"><div class="mh" style="background:#D42B2B;border-bottom:4px solid #F5C400">September 2026 <span class="mc">17 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 Direct sow Slobolt Lettuce (first fall succession)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥕 Direct sow Purple Carrot</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💙 Direct sow Borage (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌽 SOWING: Ambrosia Sweet Corn - 4x4 block</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥒 SOWING: Ashley Cucumber (fall crop)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥒 SOWING: Boston Pickling Cucumber (fall crop)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 SOWING: Slobolt Lettuce (fall succession 1)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥕 SOWING: Purple Carrot</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌈 SOWING: Pink Swiss Chard</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 SOWING: Kale (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 SOWING: Spinach (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🫚 SOWING: Beets (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 SOWING: Radishes (under corn and everywhere)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 SOWING: Bouquet Dill (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💙 SOWING: Borage (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🫘 SOWING: Cannellini Beans (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🫘 SOWING: Pole Beans (fall)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div></div></div><div class="mb"><div class="mh" style="background:#1B3FA0;border-bottom:4px solid #D42B2B">October 2026 <span class="mc">17 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💙 Direct sow Bachelor Buttons</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🎃 Watch for Cinderella Pumpkin harvest readiness</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌸 TRANSPLANT: Snapdragons + Stock + Lisianthus to left bed</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌸 TRANSPLANT: Pansies + Dianthus + Alyssum to bed edges</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💙 SOWING: Bachelor Buttons (Cornflower)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💐 SOWING: Larkspur (tall cool-season flower)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌸 SOWING: Poppies (Breadseed / California)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🌽 DAILY TASK: Hand-pollinate corn</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🎃 HARVEST CHECK: Cinderella + Delicata Pumpkins</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🍑 HARVEST: LSU Fig main crop peak</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌿 PLANT: Society Garlic in shed bed</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🌿 MONTHLY: Add pecan leaves to compost tea</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🍌 MONTHLY: Banana leaf + pseudostem collection</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌸 SOWING: Sweet Peas at BOTH arch bases</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🥬 TRANSPLANT: Cabbage + Kale + Broccoli outdoors</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🌰 HARVEST: Pecan season begins</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🍠 HARVEST: Sweet potato vines + tubers</span><span class="eb" style="background:#D42B2B">Harvest</span></div></div></div><div class="mb"><div class="mh" style="background:#111111;border-bottom:4px solid #F5C400">November 2026 <span class="mc">7 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🥜 Harvest Virginia Peanuts</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🌽 HARVEST: Ambrosia Sweet Corn</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🥜 HARVEST: Virginia Peanuts</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🌰 HARVEST: Peak pecan collection</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">✂️ HARVEST: Snapdragons + Stock blooming</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🌿 MAINTENANCE: Amend beds after corn harvest</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 SOWING: Slobolt Lettuce (succession 2)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div></div></div><div class="mb"><div class="mh" style="background:#D42B2B;border-bottom:4px solid #D42B2B">December 2026 <span class="mc">6 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">✂️ Harvest snapdragons and stock regularly</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🍅 GREENHOUSE: Start Chocolate Stripes Tomato</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🍅 GREENHOUSE: Start Matt&#x27;s Wild Cherry Tomato</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌶️ GREENHOUSE: Start ALL Peppers on heat mat</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 SOWING: Succession Lettuce + Dill + Chard (Dec)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">✂️ HARVEST: Snapdragons + Stock peak</span><span class="eb" style="background:#D42B2B">Harvest</span></div></div></div><div class="mb"><div class="mh" style="background:#1B3FA0;border-bottom:4px solid #F5C400">January 2027 <span class="mc">7 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 Start Bee Balm: cold stratify this week</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🌸 Sweet Peas climbing - first blooms on arch!</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 PREP: Cold stratify Bee Balm seeds</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🫘 HARVEST: Cannellini Beans + Pole Beans</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🥕 HARVEST: Purple Carrots</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 Succession sow lettuce (3rd)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 SOWING: Slobolt Lettuce (succession 4)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div></div></div><div class="mb"><div class="mh" style="background:#111111;border-bottom:4px solid #D42B2B">February 2027 <span class="mc">10 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 Direct sow Borage (spring)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 GREENHOUSE: Start Mammoth Basil</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 GREENHOUSE: Start Bee Balm from stratified seeds</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌿 GREENHOUSE: Start Spearmint (or root cuttings)</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🌸 Sweet Peas PEAK BLOOM on arch</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 SOWING: Borage (spring)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥬 SOWING: Slobolt Lettuce (succession 5)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌻 GREENHOUSE: Start Sunflowers + Zinnias for spring</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">✂️ MAINTENANCE: Cut back ALL perennial peppers</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🍅 TRANSPLANT: Determinate tomatoes outdoors</span><span class="eb" style="background:#1A6B1A">Transplant</span></div></div></div><div class="mb"><div class="mh" style="background:#D42B2B;border-bottom:4px solid #F5C400">March 2027 <span class="mc">21 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🍅 Transplant indeterminate tomatoes to arch trellis</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌸 Dahlias go in - permanent in 9b!</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🍅 TRANSPLANT: Chocolate Stripes + Matt&#x27;s Wild Cherry to arch</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌶️ TRANSPLANT: Jimmy Nardello + Jalapeño + Sweet Banana outdoors</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥒 GREENHOUSE: Start Ashley + Boston Pickling Cucumbers</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🎶 GREENHOUSE: Start Birdhouse Gourd</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌻 TRANSPLANT: Sunflowers + Zinnias outdoors</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌱 PLANT: Comfrey in corner of yard</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🦋 PLANT: Native Passionflower at arch base (off-season vine)</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌼 PLANT: Partridge Pea (native nitrogen fixer)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌼 PLANT: Goldenrod in sunny border</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🦋 PLANT: Swamp Milkweed for monarchs</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 SOWING: Arikara Yellow Bush Beans (spring)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🫘 SOWING: Soybeans + Edamame (spring)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌸 PLANT: Creeping Thyme as living mulch</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌴 PLANT: Turmeric rhizomes in banana grove</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌴 PLANT: Ginger rhizomes in banana grove</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌴 PLANT: Taro in banana grove / moist areas</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌽 SOWING: Ambrosia Corn (spring crop)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🍉 Start watermelons in greenhouse (optional early start)</span><span class="eb" style="background:#1B3FA0">Greenhouse</span></div><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🥒 TRANSPLANT: Cucumbers to right arch</span><span class="eb" style="background:#1A6B1A">Transplant</span></div></div></div><div class="mb"><div class="mh" style="background:#1B3FA0;border-bottom:4px solid #D42B2B">April 2027 <span class="mc">10 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#1A6B1A"></div><span class="esum">🌸 Transplant zinnias, celosias, sunflowers outdoors</span><span class="eb" style="background:#1A6B1A">Transplant</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🍉 Direct sow watermelons outdoors</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥜 Direct sow Virginia Peanuts</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🍉 SOWING: Cal-Sweet + Dixie Queen Watermelons</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🥜 SOWING: Virginia Peanuts</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌱 SOWING: Italian Striped Zucchini (spring)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🍅 HARVEST: Tomatoes - peak spring window begins</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🥒 HARVEST: Cucumber peak + pickle making</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">💐 SOWING: Nasturtiums (spring)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🌶️ MAINTENANCE: Pull sweet peas as heat arrives</span><span class="eb" style="background:#7A5000">Maintenance</span></div></div></div><div class="mb"><div class="mh" style="background:#111111;border-bottom:4px solid #F5C400">May 2027 <span class="mc">4 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🌶️ Harvest peppers heavily</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🍅 HARVEST: Tomato peak season</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🌶️ HARVEST: Peppers heavily</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌻 SOWING: Zinnias + Sunflowers (succession 2)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div></div></div><div class="mb"><div class="mh" style="background:#D42B2B;border-bottom:4px solid #D42B2B">June 2027 <span class="mc">4 events</span></div><div class="el"><div class="ev"><div class="es" style="background:#D42B2B"></div><span class="esum">🍑 HARVEST: LSU Fig breba (first) crop</span><span class="eb" style="background:#D42B2B">Harvest</span></div><div class="ev"><div class="es" style="background:#1B3FA0"></div><span class="esum">🌸 SOWING: Zinnias + Celosias (summer)</span><span class="eb" style="background:#1B3FA0">Seeds</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🎃 PREP: Amend arch base for July pumpkin sowing</span><span class="eb" style="background:#7A5000">Maintenance</span></div><div class="ev"><div class="es" style="background:#7A5000"></div><span class="esum">🍅 MAINTENANCE: Pull or cut back tomatoes for summer</span><span class="eb" style="background:#7A5000">Maintenance</span></div></div></div></section>
+</div>
+
+<footer>
+  My New Orleans Garden &nbsp;·&nbsp; Zone 9b &nbsp;·&nbsp; Personal Growing Guide &nbsp;·&nbsp; June 2026
+</footer>
+
+<script>
+function search(term) {
+  term = term.trim().toLowerCase();
+  const sections = document.querySelectorAll('#page section');
+  let shown = 0;
+  // Remove old marks
+  document.querySelectorAll('mark').forEach(m => {
+    m.parentNode.replaceChild(document.createTextNode(m.textContent), m);
+    m.parentNode.normalize();
+  });
+  sections.forEach(sec => {
+    if (!term) {
+      sec.classList.remove('hidden');
+      shown++;
+      return;
+    }
+    if (sec.textContent.toLowerCase().includes(term)) {
+      sec.classList.remove('hidden');
+      shown++;
+      highlight(sec, term);
+    } else {
+      sec.classList.add('hidden');
+    }
+  });
+  document.getElementById('qc').textContent = term ? shown + ' sections' : '';
+}
+
+function highlight(node, term) {
+  if (node.nodeType === 3) {
+    const i = node.textContent.toLowerCase().indexOf(term);
+    if (i < 0) return;
+    const mark = document.createElement('mark');
+    mark.textContent = node.textContent.slice(i, i + term.length);
+    const after = node.splitText(i);
+    after.textContent = after.textContent.slice(term.length);
+    node.parentNode.insertBefore(mark, after);
+  } else if (node.nodeType === 1 && !['SCRIPT','STYLE','MARK'].includes(node.tagName)) {
+    [...node.childNodes].forEach(c => highlight(c, term));
+  }
+}
+
+document.querySelectorAll('.ev').forEach(ev => {
+  const sum = ev.querySelector('.esum');
+  const orig = sum.textContent;
+  let open = false;
+  ev.addEventListener('click', () => {
+    open = !open;
+    ev.style.minHeight = open ? 'auto' : '30px';
+  });
+});
+</script>
+</body>
+</html>
